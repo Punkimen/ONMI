@@ -1,0 +1,151 @@
+$md0: 1921px;
+$md1: 1440px;
+$md2: 1200px;
+$md3: 992px;
+$md4: 767px;
+$md5: 568px;
+$md6: 412px;
+
+:root {
+    --color-main: #0003FF;
+}
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: inherit;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    line-height: inherit;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 1.2;
+    overflow-x: hidden;
+
+    &.overlay {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen {
+    position: relative;
+    z-index: 7;
+}
+
+.container {
+    padding: 0 40px 0 51px;
+    width: 100vw;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    display: block;
+    min-width: 7.3vw;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--color-main);
+    color: #ECECEC;
+    text-align: center;
+    border-radius: 38px;
+    font-size: 0.85vw;
+    padding: 1vw 1vw 1.1vw 1vw;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.2s;
+    white-space: nowrap;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        transition: all ease .2s;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:hover {
+        color: #000;
+
+        &::after {
+            top: 0;
+        }
+    }
+
+    &_white {
+        background: #fff;
+        color: #000;
+
+        &::after {
+            background: var(--color-main);
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.animate-text div {
+    display: inline-block;
+}
+
+.animate-letters {
+    * {
+        display: inline-block;
+    }
+}

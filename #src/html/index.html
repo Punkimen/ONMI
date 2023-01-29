@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONMI</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div data-scroll-container>
+        <div class="main-screen" data-scroll-section>
+            @@include('components/_header.html')
+            @@include('components/_hero.html')
+        </div>
+        @@include('components/_description-reality.html')
+        @@include('components/_adventure.html')
+    </div>
+    <div class="fixed-btns">
+        <div class="container">
+            <div class="fixed-btns__wrapper">
+                <div class="fixed-btns__left">
+                    <a href="#" data-effect="fade-down" data-delay="1.2" class="fixed-btns__app btn btn_white animate">
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" data-effect="fade-down" data-duration="1.2" data-delay="1.2"
+                        class="fixed-btns__app btn btn_white animate">
+                        <span>Google Play</span>
+                    </a>
+                </div>
+                <div class="fixed-btns__right">
+                    <a href="#" class="btn animate" data-effect="fade-down" data-duration="0.9" data-delay="1.4" style="position:relative;bottom: 9px;
+                    left: 6px;"><span>Book WL</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('components/_preloader.html')
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>

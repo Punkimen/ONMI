@@ -1,0 +1,32 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  padding: 6vw 0 10vw;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    position: relative;
+    white-space: nowrap;
+    font-size: 12.1vw;
+    letter-spacing: -.5rem;
+    font-weight: 400;
+
+    &>span {
+      background: linear-gradient(150deg, rgba(212, 201, 193, 1) 0%, rgba(65, 67, 69, 1) 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      position: relative;
+      left: -0.04em;
+      width: fit-content;
+    }
+  }
+}
+
+.container {}
