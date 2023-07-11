@@ -1,26 +1,20 @@
 .burger {
-  display: none;
   position: relative;
   top: 0;
   right: 0px;
-  width: 42px;
-  height: 27px;
+  width: 2vw;
+  height: 0.31vw;
   cursor: pointer;
   z-index: 5;
-
-  @media(max-width:$md3) {
-    display: block;
-  }
 
   span {
     position: absolute;
     transition: all .3s ease 0s;
-    top: calc(50% - 1px);
+    top: calc(50% - 0.05vw);
     left: 0;
-    height: 3px;
-    border-radius: 2px;
+    height: 0.05vw;
     width: 100%;
-    background: $colorGreen;
+    background: #fff;
     display: block;
 
     &:first-child {
@@ -39,12 +33,12 @@
 
       &:first-child {
         transform: rotate(-45deg);
-        top: calc(50% - 2px);
+        top: calc(50% - 0.10vw);
       }
 
       &:last-child {
         transform: rotate(45deg);
-        bottom: calc(50% - 1px);
+        bottom: calc(50% - 0.05vw);
       }
     }
   }

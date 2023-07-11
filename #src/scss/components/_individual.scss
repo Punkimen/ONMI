@@ -1,0 +1,180 @@
+.step {
+
+  &__individual {}
+}
+
+.individual {
+
+  &__wrapper {
+    @media(max-width:$md4) {
+      display: block;
+    }
+  }
+
+  &__title {
+    color: #DEDEDE;
+    text-transform: uppercase;
+    font-size: 1.46vw;
+    line-height: 1.3em;
+    font-weight: bold;
+
+    @media(max-width:$md3) {
+      font-size: 2.82vw;
+    }
+
+    @media(max-width:$md4) {
+      display: block;
+      margin-bottom: 13.02vw;
+      font-size: 3.91vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 7.04vw;
+      margin-bottom: 25.82vw;
+      letter-spacing: -0.01em;
+    }
+  }
+}
+
+.individual-chose {
+  display: flex;
+
+  @media(max-width:$md4) {
+    display: block;
+  }
+
+  &__item {
+    max-width: 15.63vw;
+    width: 100%;
+    text-transform: uppercase;
+
+    @media(max-width:$md3) {
+      max-width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 9.11vw;
+
+      @media(max-width:$md3) {
+        margin-right: 4vw;
+      }
+
+      @media(max-width:$md4) {
+        margin-right: 0;
+        margin-bottom: 11.72vw;
+      }
+
+      @media(max-width:$md5) {
+        margin-bottom: 40.13vw;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.35vw;
+    margin-bottom: 1.30vw;
+    overflow: hidden;
+
+    @media(max-width:$md3) {
+      font-size: 2.62vw;
+    }
+
+    @media(max-width:$md4) {
+      font-size: 3.39vw;
+      margin-top: 2.60vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 6.10vw;
+      margin-top: 8.69vw;
+      margin-bottom: 5vw;
+    }
+  }
+
+  &__text {
+    font-size: 0.94vw;
+    line-height: 1.7em;
+    max-width: 15vw;
+
+    @media(max-width:$md3) {
+      font-size: 1.81vw;
+      max-width: 100%;
+    }
+
+    @media(max-width:$md4) {
+      font-size: 1.82vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 3.29vw;
+    }
+
+    .word {
+      overflow: hidden;
+    }
+  }
+
+  &__list {
+    font-size: 0.94vw;
+    line-height: 1.7em;
+
+    @media(max-width:$md3) {
+      font-size: 1.81vw;
+    }
+
+    @media(max-width:$md4) {
+      font-size: 1.82vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 3.29vw;
+    }
+  }
+
+  &__list-elem {
+    position: relative;
+
+    @media(max-width:$md4) {
+      padding-left: 0;
+    }
+
+    .word {
+      overflow: hidden;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.3vw;
+    }
+
+    &::before {
+      content: attr(data-count);
+      border: 0.1vw solid #555555;
+      color: #555555;
+      font-weight: 700;
+      font-size: 0.63vw;
+      line-height: 1.3em;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0.26vw;
+      left: -2.08vw;
+      width: 1.20vw;
+      height: 1.20vw;
+
+
+      @media(max-width:$md3) {
+        font-size: 1.21vw;
+        width: 2.32vw;
+        height: 2.32vw;
+        line-height: 0.9em;
+        left: -3.02vw;
+      }
+
+      @media(max-width:$md4) {
+        display: none;
+      }
+    }
+  }
+}

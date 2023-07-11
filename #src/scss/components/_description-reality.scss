@@ -1,50 +1,106 @@
 .description-reality {
   position: relative;
-  margin-top: -100vh;
-  padding-bottom: 100vh;
+  min-height: 100vh;
 
   &__content {
     width: 100%;
-    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
-    position: relative;
-    z-index: 5;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+
+    &.show {
+      opacity: 1;
+    }
   }
 
   &__inner {
-
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   &__text {
-    margin: 0 auto;
-    max-width: 40.1vw;
     width: 100%;
     font-weight: 600;
-    line-height: 1.56em;
-    letter-spacing: 0.05em;
+    font-size: 1.46vw;
+    line-height: 2.08vw;
+    letter-spacing: -0.05vw;
     text-align: center;
-    text-transform: uppercase;
     color: #000;
+    max-width: 30vw;
+    width: 100%;
+
+
+    &.show {
+      opacity: 1;
+    }
+
+    @media(prefers-color-scheme: light) {
+      color: #000;
+    }
+
+    @media(prefers-color-scheme: dark) {
+      color: #000;
+    }
+
+    @media(max-width: $md3) {
+      font-size: 1.21vw;
+    }
+
+    @media(max-width: $md4) {
+      font-size: 1.56vw;
+    }
+
+    @media(max-width: $md5) {
+      max-width: 68.08vw;
+      font-weight: bold;
+      font-size: 2.82vw;
+      line-height: 1.65em;
+    }
 
     p {
       &:not(:last-child) {
-        margin-bottom: 1.71vw;
+        margin-bottom: 2vw;
+
+        @media(max-width: $md3) {
+          font-size: 1.21vw;
+        }
+
+        @media(max-width: $md4) {
+          font-size: 1.56vw;
+        }
+
+        @media(max-width: $md5) {
+          font-weight: bold;
+          font-size: 2.82vw;
+          margin-bottom: 5vw;
+        }
+      }
+
+      &:last-child {
+        @media(max-width: $md5) {
+          margin-top: 9vw;
+        }
       }
     }
   }
 
   &__gradient {
+  }
 
-    // height: 100vh;
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity ease-in 1.2s;
+    will-change: opacity;
   }
 }
 
@@ -52,5 +108,11 @@
   padding: 0px 0.5em;
   text-transform: uppercase;
   border: 0.1em solid #000000;
-  border-radius: 15px;
+  border-radius: 0.78vw;
+
+  @media(max-width: $md4) {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
 }

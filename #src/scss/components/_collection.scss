@@ -1,0 +1,31 @@
+.collection {
+  padding: 25vw 0 15vw;
+
+  &__top {
+    position: relative;
+    margin-bottom: 13.75vw;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14.74vw;
+    position: relative;
+    left: 17.92vw;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+  }
+
+  &__pose {
+    width: 45.5vw;
+    position: absolute;
+    left: 23.44vw;
+    top: -13.54vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

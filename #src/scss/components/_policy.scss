@@ -1,0 +1,66 @@
+.policy {
+  padding: 10.36vw 0 10.36vw;
+
+  &__circle {
+    position: relative;
+    width: 50.05vw;
+    height: 50.05vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.05vw solid rgba(255, 255, 255, 0.3);
+  }
+
+  &__text {
+    margin-top: 6.61vw;
+    text-transform: uppercase;
+    margin-bottom: 3.54vw;
+    max-width: 28.13vw;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.05vw;
+    line-height: 1.6em;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1.56vw;
+      }
+
+      &:last-child {
+        max-width: 22.50vw;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__subtext {
+    text-transform: uppercase;
+    font-size: 0.83vw;
+    text-align: center;
+
+    span {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 0.26vw;
+      }
+    }
+
+    &_small {
+      font-size: 0.73vw;
+    }
+  }
+
+  &__checkbox {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 4.90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

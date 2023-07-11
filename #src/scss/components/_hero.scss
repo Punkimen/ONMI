@@ -1,32 +1,121 @@
 .hero {
-  height: 100vh;
+  // height: 100vh;
   position: relative;
-  padding: 6vw 0 10vw;
+  z-index: 2;
+  padding: 4.3vw 0 4.3vw;
+
+  @media(max-width: $md3) {
+    padding: 12vw 0 12vw;
+  }
+
+  @media(max-width: $md4) {
+    height: 100vh;
+    min-height: 93vw;
+  }
 
   &__wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    // min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @media(max-width: $md4) {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin-bottom: 4.25vw;
   }
 
   &__title {
+    display: inline-block;
+    text-align: center;
     position: relative;
     white-space: nowrap;
-    font-size: 12.1vw;
-    letter-spacing: -.5rem;
+    font-size: 12.5vw;
+    line-height: 1em;
+    letter-spacing: -0.041em;
     font-weight: 400;
+    overflow: visible;
+    left: -0.067em;
+    width: fit-content;
+    position: relative;
 
-    &>span {
-      background: linear-gradient(150deg, rgba(212, 201, 193, 1) 0%, rgba(65, 67, 69, 1) 100%) !important;
-      -webkit-background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
+    @media(max-width: $md1) {
+      font-size: 12.3vw;
+    }
+
+    @media(max-width: $md3) {
+      font-size: 12.1vw;
+    }
+
+    @media(max-width: $md4) {
+      text-align: center;
+      white-space: normal;
+      line-height: 1em;
+      letter-spacing: -0.01em;
+      font-size: 14.55vw;
+      left: 0;
+      margin-bottom: 8vw;
+    }
+
+    span {
       position: relative;
-      left: -0.04em;
-      width: fit-content;
+      margin-left: -0.26vw;
+      padding-right: 0.26vw;
+    }
+  }
+
+  &__info {
+    opacity: 0;
+    display: flex;
+    border-radius: 1.41vw;
+    border: 0.05vw solid rgba(255, 255, 255, 0.17);
+    background: #000;
+    font-size: 0.83vw;
+    padding: 0.78vw 2.08vw 0.83vw 1.41vw;
+    transform: rotate(-10deg);
+    text-transform: uppercase;
+    width: fit-content;
+    position: absolute;
+    bottom: 0px;
+    right: 6.41vw;
+  }
+
+  &__info-text {
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-right: 1.88vw;
+    }
+  }
+
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 0.73vw;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+  }
+
+  &__mobile-btn {
+    display: none;
+
+    @media(max-width: $md4) {
+      display: block;
     }
   }
 }
 
-.container {}
+#population {
+  min-width: 5.42vw;
+}
+
+.container {
+}

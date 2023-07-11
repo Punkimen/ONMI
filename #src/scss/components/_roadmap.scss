@@ -1,0 +1,91 @@
+.roadmap {
+  padding: 25.81vw 0 7.81vw;
+
+  &__title {
+    font-size: 18.28vw;
+    text-align: center;
+    margin-bottom: 3.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    left: -1.46vw;
+    width: calc(100% + 1.56vw);
+  }
+
+  &__content {
+  }
+
+  &__content-item {
+  }
+}
+
+.container {
+
+  &_padding {
+  }
+}
+
+.roadmap-item {
+  padding-top: 2.34vw;
+  position: relative;
+  padding-bottom: 8.44vw;
+  font-size: 0.94vw;
+
+
+  &_header {
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-size: 1.41vw;
+    padding-bottom: 2.08vw;
+  }
+
+  &__wrapper {
+  }
+
+  &__label {
+    overflow: hidden;
+    font-size: 1.41vw;
+  }
+
+  &__col-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.08vw;
+  }
+
+  &__time {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.46vw;
+    overflow: hidden;
+  }
+
+  &__descr {
+    line-height: 1.5em;
+    max-width: 20.57vw;
+    width: 100%;
+
+    p {
+      color: #ECECEC;
+
+      &:not(:last-child) {
+        margin-bottom: 1.56vw;
+      }
+    }
+  }
+
+  &__descr-label {
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.04vw;
+  }
+}
+
+.main-wrapper {
+
+  &__col {
+  }
+
+  &__col-item {
+  }
+}

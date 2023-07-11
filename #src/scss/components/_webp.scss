@@ -1,0 +1,19 @@
+.no-webp {
+  .omi-card_custom {
+    background-image: url(../img/OMI/card_1_bg.png);
+  }
+
+  .omi-card_rarity {
+    background-image: url(../img/OMI/card_2_bg.png);
+  }
+}
+
+.webp {
+  .omi-card_custom {
+    background-image: url(../img/OMI/card_1_bg.webp);
+  }
+
+  .omi-card_rarity {
+    background-image: url(../img/OMI/card_2_bg.webp);
+  }
+}

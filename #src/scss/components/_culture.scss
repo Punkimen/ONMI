@@ -1,0 +1,88 @@
+.culture {
+  padding: 6vw 0 0vw;
+
+  &__hero {
+    position: relative;
+    margin-bottom: 19.4vw;
+  }
+
+  &__title {
+    font-size: 9.79vw;
+    line-height: 0.82;
+    letter-spacing: -0.05em;
+    text-align: center;
+    line-height: 1.6em;
+    position: relative;
+    top: 0.78em;
+
+    .title-row {
+      &:last-child {
+        top: -1.2em;
+      }
+    }
+  }
+
+  &__pose {
+    width: 100%;
+    max-width: 25vw;
+    position: absolute;
+    top: 3.2vw;
+    left: 37.74vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.culture-circles {
+  display: flex;
+}
+
+.culture-circle {
+  flex: 0 0 35.16vw;
+  width: 35.16vw;
+  height: 35.16vw;
+  border-radius: 50%;
+  border: 0.05vw solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 2.60vw 2.60vw 2.60vw 7.14vw;
+
+  &:nth-child(2) {
+    left: -2.66vw;
+  }
+
+  &:nth-child(3) {
+    left: -5.31vw;
+  }
+
+  &__content {
+    position: relative;
+    bottom: -16.56vw;
+    max-width: 17.71vw;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2.19vw;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.60vw;
+  }
+
+  &__text {
+    font-size: 0.94vw;
+    color: var(--color-gray);
+    line-height: 1.44em;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1.56vw;
+      }
+    }
+  }
+}

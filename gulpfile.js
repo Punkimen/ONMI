@@ -52,6 +52,8 @@ let {src, dest} = require("gulp"),
 	rename = require("gulp-rename"),
 	uglify = require("gulp-uglify-es").default,
 	imagemin = require("gulp-imagemin"),
+	webp = require("gulp-webp"),
+	newer = require("gulp-newer"),
 	ttf2woff = require("gulp-ttf2woff"),
 	ttf2woff2 = require("gulp-ttf2woff2"),
 	svgSprite = require("gulp-svg-sprite");
@@ -65,6 +67,7 @@ function browserSync(params) {
 		notify: false,
 	});
 }
+
 function html() {
 	return src(path.src.html)
 		.pipe(fileinclude())
@@ -96,6 +99,7 @@ function css() {
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream());
 }
+
 function js() {
 	return src(path.src.js)
 		.pipe(fileinclude())
@@ -109,19 +113,27 @@ function js() {
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
 }
+
 function images() {
 	return src(path.src.img)
-		.pipe(
-			imagemin({
-				progressive: true,
-				svgoPlugins: [{removeViewBox: false}],
-				interlaced: true,
-				optimizationLevel: 3,
+		.pipe(webp())
+		.pipe(src(path.src.img))
+		.pipe(imagemin([
+			imagemin.gifsicle({interlaced: true}),
+			imagemin.mozjpeg({quality: 90, progressive: true}),
+			imagemin.svgo({
+				plugins: [
+					{removeViewBox: true},
+					{cleanupIDs: false}
+				]
 			})
-		)
+		]))
+		.pipe(dest(path.build.img))
+		.pipe(src(path.src.img))
 		.pipe(dest(path.build.img))
 		.pipe(browsersync.stream());
 }
+
 function svg() {
 	return gulp
 		.src([source_folder + "/iconsprite/*.svg"])
@@ -138,13 +150,16 @@ function svg() {
 		.pipe(dest(path.build.img))
 		.pipe(browsersync.stream());
 }
+
 function fonts() {
 	src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
 	return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
+
 function video() {
 	return src(path.src.video).pipe(dest(path.build.video));
 }
+
 function php() {
 	return src(path.src.php)
 		.pipe(dest(path.build.php))
@@ -164,11 +179,11 @@ function fontsStyle(params) {
 					if (c_fontname != fontname) {
 						fs.appendFile(
 							source_folder + "/scss/_fonts.scss",
-							'@include font("' +
-								fontname +
-								'", "' +
-								fontname +
-								'", "400", "normal");\r\n',
+							'@include fonts("' +
+							fontname +
+							'", "' +
+							fontname +
+							'", "400", "normal");\r\n',
 							cb
 						);
 					}
@@ -178,7 +193,9 @@ function fontsStyle(params) {
 		});
 	}
 }
-function cb() {}
+
+function cb() {
+}
 
 function watchFiles() {
 	gulp.watch([path.watch.html], html);

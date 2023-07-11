@@ -1,0 +1,246 @@
+.descover {
+  padding: 0vw 0 20vw;
+
+  @media(max-width:$md5) {
+    padding: 0 0 40vw;
+  }
+
+  &__descr {
+    width: 48vw;
+    margin: 0 auto 1.04vw;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width:$md4) {
+      width: 100%;
+      margin-bottom: 10.42vw;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 18.78vw;
+    }
+  }
+
+  &__title {
+    letter-spacing: -0.03em;
+
+    @media(max-width:$md4) {
+      margin-bottom: 6.51vw;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 11.74vw;
+    }
+  }
+
+  &__title-row {
+    perspective: 600px;
+
+    &_1 {
+      padding-left: 4.2vw;
+    }
+
+    &_2 {
+      padding-left: 11.75vw;
+    }
+
+    &_3 {
+      text-align: right;
+      padding-right: 2vw;
+    }
+
+    &_4 {
+      padding-left: 10.29vw;
+    }
+  }
+
+  &__text {
+    width: 11.6vw;
+    position: absolute;
+    bottom: 3.33vw;
+    right: -4.2vw;
+
+    @media(max-width:$md3) {
+      width: 26vw;
+      bottom: -2vw;
+      right: -18vw;
+    }
+
+    @media(max-width:$md5) {
+      width: 75vw;
+      text-align: center;
+    }
+  }
+
+  &__map {
+    position: relative;
+    margin-bottom: 12.27vw;
+  }
+
+  &__map-img {
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__journey {}
+
+  &__journey-title {
+    text-align: center;
+    font-size: 3.13vw;
+    margin-bottom: 5.6vw;
+    line-height: 1.3em;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+
+    @media(max-width:$md3) {
+      font-size: 4.54vw;
+    }
+
+    @media(max-width:$md4) {
+      font-size: 3.91vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 7.04vw;
+      margin-bottom: 21.13vw;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__journey-title__row {
+    overflow: hidden;
+
+    &:last-child {
+      position: relative;
+      bottom: 0.73vw;
+    }
+  }
+
+  &__journey-cards {
+    width: 54vw;
+    margin: 0 auto;
+    display: flex;
+
+    @media(max-width:$md3) {
+      width: 100%;
+    }
+
+    @media(max-width:$md5) {
+      display: block;
+    }
+  }
+
+
+}
+
+.descover {
+
+  &__map-point {
+    position: absolute;
+    z-index: 2;
+
+    @media(max-width:$md4) {
+      display: none;
+    }
+
+    &_1 {
+      bottom: 12.19vw;
+      left: 53.65vw;
+
+      .map-point__circle {
+        width: 3.54vw;
+        height: 3.54vw;
+      }
+    }
+
+    &_2 {
+      top: 19.90vw;
+      left: 44.58vw;
+
+      .map-point__circle {
+        width: 2.45vw;
+        height: 2.45vw;
+      }
+    }
+
+    &_3 {
+      top: 14.3vw;
+      left: 49.13vw;
+
+      .map-point__circle {
+        width: 1.15vw;
+        height: 1.15vw;
+      }
+    }
+  }
+}
+
+.journey-card {
+  width: 100%;
+  background: #0F1015;
+  border-radius: 3.49vw;
+  padding: 4vw 4.5vw 2.6vw 4vw;
+  height: 35.44vw;
+  min-height: fit-content;
+
+  @media(max-width:$md3) {
+    height: 50.40vw;
+    min-height: fit-content;
+  }
+
+  @media(max-width:$md5) {
+    display: block;
+    padding: 12.74vw 8.39vw;
+    height: 112.20vw;
+    min-height: fit-content;
+    border-radius: 8vw;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.68vw;
+
+    @media(max-width:$md5) {
+      margin-right: 0;
+      margin-bottom: 3.05vw;
+    }
+  }
+
+  &__title {
+    font-size: 1.56vw;
+    letter-spacing: 0.01em;
+    line-height: 1.25em;
+    margin-bottom: 1.5vw;
+
+    @media(max-width:$md3) {
+      font-size: 3.02vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 5.16vw;
+      margin-bottom: 7vw;
+    }
+  }
+
+  &__text {
+    font-size: 0.94vw;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #DEDEDE;
+    letter-spacing: 0.01em;
+
+    @media(max-width:$md3) {
+      font-size: 1.81vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 3.29vw;
+    }
+  }
+}

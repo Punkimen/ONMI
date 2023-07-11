@@ -1,53 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONMI</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONMI</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div data-scroll-container>
-        <div class="main-screen" data-scroll-section>
-            @@include('components/_header.html')
-            @@include('components/_hero.html')
+<div class="page-content">
+  @@include('components/_header.html')
+  <div class="description-reality__content">
+    <div class="container">
+      <div class="description-reality__inner">
+        <div class="description-reality__text">
+          <p>A game in which you can get into a hidden virtual layer over the city and the whole world.</p>
+          <p>Here you can earn money, find valuable digital art, participate in an international Hunger Games
+            tournament,
+            enter a social competition, activate access to real goods from fashion brands, stars and artists, and
+            discover corners of this world in secret itineraries.</p>
         </div>
-        @@include('components/_description-reality.html')
-        @@include('components/_adventure.html')
+      </div>
     </div>
-    <div class="fixed-btns">
-        <div class="container">
-            <div class="fixed-btns__wrapper">
-                <div class="fixed-btns__left">
-                    <a href="#" data-effect="fade-down" data-delay="1.2" class="fixed-btns__app btn btn_white animate">
-                        <span>App Store</span>
-                    </a>
-                    <a href="#" data-effect="fade-down" data-duration="1.2" data-delay="1.2"
-                        class="fixed-btns__app btn btn_white animate">
-                        <span>Google Play</span>
-                    </a>
-                </div>
-                <div class="fixed-btns__right">
-                    <a href="#" class="btn animate" data-effect="fade-down" data-duration="0.9" data-delay="1.4" style="position:relative;bottom: 9px;
-                    left: 6px;"><span>Book WL</span></a>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div id="smooth-wrapper" class="smooth-wrapper">
+    <div id="smooth-content" class="smooth-content">
+      @@include('components/_hero.html')
+      @@include('components/_description-reality.html')
+      @@include('components/_reality.html')
+      @@include('components/_adventure.html')
+      @@include('components/_create.html')
+      @@include('components/_cards.html')
+      @@include('components/_find.html')
+      @@include('components/_journeyCards.html')
+      @@include('components/_eachPoint.html')
+      @@include('components/_pvp.html')
+      @@include('components/_level.html')
+      @@include('components/_sound.html')
+      @@include('components/_market.html')
+      @@include('components/_hunger-games.html')
+      @@include('components/_mission.html')
+      @@include('components/_culture.html')
+      @@include('components/_token.html')
+      @@include('components/_cardsToken.html')
+      @@include('components/_tokemonics.html')
+      @@include('components/_security.html')
+      @@include('components/_roadmap.html')
+      @@include('components/_policy.html')
+      @@include('components/_questions.html')
+      @@include('components/_platform.html')
+      @@include('components/_keep.html')
     </div>
-    @@include('components/_preloader.html')
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js" type="module"></script>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/libs/gsap.min.js"></script>
+<script src="./js/libs/ScrollSmoother.min.js"></script>
+<script src="./js/libs/ScrollTrigger.min.js"></script>
+<script src="./js/libs/marquee3k.min.js"></script>
+<script async src="./js/libs/simple-webp.min.js"></script>
+<script src="./js/libs/sine-waves.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/@master/.min.js"></script>-->
+<script src="js/script.min.js" type="module" defer></script>
 </body>
 
 </html>

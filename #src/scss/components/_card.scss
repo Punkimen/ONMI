@@ -1,0 +1,254 @@
+.cards {
+  padding: 0 0 9.79vw;
+
+  &__wrapper {
+    max-width: 52.71vw;
+    margin: 0 auto 11.04vw;
+    display: flex;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 0.94vw;
+    }
+  }
+
+  &__omies-text {
+    max-width: 20.63vw;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}
+
+.card {
+  background-color: #121214;
+  border-radius: 2.60vw;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 0.94vw;
+  }
+
+  &__front {
+    background-color: #121214;
+    position: relative;
+  }
+
+  &__front-img {
+    position: relative;
+    transition: transform ease-in-out .05s;
+
+    &_bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 130%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  &_1 {
+    height: 42.81vw;
+
+    .card__front-aura {
+      position: absolute;
+      top: 1.98vw;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: transform ease-in-out .05s;
+    }
+
+    .card__front-img {
+      max-width: 25.52vw;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &_2 {
+    height: 33vw;
+
+    .card__front {
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center -12.03vw;
+
+      .card__front-img {
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 15.31vw;
+        width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &_3 {
+    height: 32vw;
+
+    .card__front {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      background-size: 160%;
+      background-position: center 75%;
+      overflow: hidden;
+
+      .card__front-img {
+        position: absolute;
+        top: 26%;
+        left: -28%;
+        width: 41.93vw;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .card__title {
+      max-width: 10.42vw;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card__text {
+      max-width: 14.58vw;
+      margin: 0 auto;
+    }
+  }
+
+  &_4 {
+    height: 43.81vw;
+
+    .card__front {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+    }
+  }
+
+  &__front {
+    padding: 4.2vw 3.2vw 3vw 3.6vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &_centered {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 5vw;
+    }
+  }
+
+  &__back {
+    display: none;
+  }
+
+  &__title {
+    color: #DEDEDE;
+    text-align: center;
+    font-size: 1.56vw;
+    font-weight: 600;
+    letter-spacing: -0.04vw;
+    margin-bottom: 1.04vw;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    opacity: 0.37;
+  }
+
+}
+
+.omies {
+  &__circles {
+    max-width: 10.16vw;
+    width: 100%;
+    margin: 0 auto 2.86vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__circle {
+    width: 4.38vw;
+    flex: 0 0 4.38vw;
+    will-change: transform;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &_1 {
+      position: relative;
+      transform: translateX(100%);
+    }
+
+    &_2 {
+      width: 4.79vw;
+      flex: 0 0 4.79vw;
+      position: relative;
+      z-index: 2;
+    }
+
+    &_3 {
+      position: relative;
+      transform: translateX(-100%);
+    }
+  }
+}

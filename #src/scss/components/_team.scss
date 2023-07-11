@@ -1,0 +1,82 @@
+.team {
+  padding: 9.64vw 0 25.21vw;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.13vw;
+    margin-bottom: 2.5vw;
+    overflow: hidden;
+  }
+
+  &__row {
+    position: relative;
+    padding: 2.71vw 0 5.63vw;
+  }
+
+}
+
+.team-item {
+
+  &__wrapper {}
+
+  &__label {
+    font-size: 1.46vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  &__teamates {
+    display: flex;
+    width: 100%;
+  }
+
+  &__list {
+    font-size: 1.30vw;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 7.40vw;
+    }
+  }
+
+  &__list-elem {
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 0.68vw;
+    }
+  }
+}
+
+.teammate {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1.46vw;
+  }
+
+  &__photo {
+    flex: 0 0 3.65vw;
+    width: 3.65vw;
+    height: 3.65vw;
+    background: #D8D8D8;
+    border-radius: 50%;
+    margin-right: 1.56vw;
+  }
+
+  &__content {}
+
+  &__content-name {
+    text-transform: uppercase;
+    font-size: 1.30vw;
+  }
+
+  &__content-job {
+    text-transform: uppercase;
+    font-size: 0.83vw;
+    color: #585858;
+  }
+}

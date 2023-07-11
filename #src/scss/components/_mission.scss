@@ -1,0 +1,148 @@
+.mission {
+  padding: 4vw 0 18vw;
+  @media(max-width: $md5) {
+    margin-bottom: 52vw;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-top: 2.19vw;
+
+    @media(max-width: $md4) {
+      display: block;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.05vw;
+    background: #D4C9C1;
+    transition: 1.2s ease-in-out .1s;
+
+    @media(max-width: $md4) {
+      display: none;
+    }
+
+    &_diagonally {
+      width: 113%;
+      left: 50%;
+      transform: translateX(-50%) rotate(-28deg);
+      background: none;
+
+      @media(max-width: $md4) {
+        display: block;
+        width: 150%;
+        top: 15vw;
+      }
+
+      @media(max-width: $md5) {
+        top: 49vw;
+      }
+
+      svg {
+        position: relative;
+        top: -0.94vw;
+        width: 100%;
+        height: 100%;
+
+        line {
+          stroke-dasharray: 200%;
+          stroke-dashoffset: 258%;
+          transition: 1.2s ease-in-out .1s;
+        }
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 4.17vw;
+    line-height: 1em;
+    letter-spacing: -0.01em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 1.46vw;
+    @media(max-width: $md3) {
+      font-size: 6.05vw;
+    }
+
+    @media(max-width: $md4) {
+      font-size: 10.42vw;
+      margin-bottom: 20.44vw;
+      width: 24vw;
+      display: block;
+      word-wrap: break-word;
+
+
+      @supports (--css: hyphens) {
+        word-wrap: normal;
+        hyphens: manual;
+      }
+    }
+
+    @media(max-width: $md5) {
+      font-size: 18.78vw;
+      width: 43vw;
+      margin-bottom: 42.25vw;
+    }
+  }
+
+  &__title-arrow {
+    font-weight: 300;
+    margin-left: 3.91vw;
+    width: 3.13vw;
+
+    @media(max-width: $md4) {
+      display: none;
+    }
+
+    img {
+      transform: rotate(180deg);
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    width: 35.6vw;
+    font-size: 1.25vw;
+    line-height: 1.8;
+
+    @media(max-width: $md3) {
+      font-size: 2.12vw;
+    }
+
+    @media(max-width: $md4) {
+      font-size: 2.73vw;
+    }
+
+    @media(max-width: $md5) {
+      font-size: 4.93vw;
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16.4vw;
+    }
+
+    &_big {
+      font-size: 2.60vw;
+      width: 38.11vw;
+      line-height: 1.2em;
+      letter-spacing: -0.013em;
+      font-size: 2.60vw;
+
+      p {
+        &:not(:last-child) {
+          margin-bottom: 3.23vw;
+        }
+      }
+    }
+
+  }
+}

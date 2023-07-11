@@ -1,0 +1,141 @@
+.be-part {
+  padding-bottom: 3vw;
+  position: relative;
+  margin-bottom: 3.6vw;
+
+  &__content {
+    position: relative;
+    left: -0.63vw;
+    margin-bottom: 11.27vw;
+
+    @media(max-width:$md4) {
+      margin-bottom: 49vw;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 135vw;
+    }
+  }
+
+  &__title {
+    font-size: 9.27vw;
+  }
+
+  &__title-row {
+    display: block;
+
+    &_1 {}
+
+    &_2 {
+      padding-left: 24.26vw;
+    }
+
+    &_3 {}
+
+    &_4 {
+      padding-left: 34.54vw;
+    }
+
+    &_5 {
+      text-align: right;
+    }
+  }
+
+  &__pose {
+    position: absolute;
+    top: -9.27vw;
+    left: 2vw;
+    pointer-events: none;
+    z-index: 3;
+
+    @media(max-width:$md4) {
+      left: 50%;
+      left: 50%;
+      top: auto;
+      transform: translate(-50%, -20%);
+    }
+
+    @media(max-width:$md5) {}
+
+    img {
+      display: block;
+      width: 81.41vw;
+      height: auto;
+
+      @media(max-width:$md4) {
+        width: 48vw;
+      }
+
+      @media(max-width:$md5) {
+        width: 108vw;
+      }
+    }
+  }
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 13.18vw;
+}
+
+.circle {
+  position: relative;
+
+  @media(max-width:$md4) {
+    width: fit-content;
+  }
+
+  img {
+    display: block;
+    width: 2.9vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width:$md4) {
+      width: 5.86vw;
+    }
+
+    @media(max-width:$md5) {
+      width: 13.56vw;
+    }
+  }
+
+  &::after {
+    content: url(../img/icons/circle-triangle.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.26vw;
+
+    @media(max-width:$md5) {
+      bottom: 1vw;
+    }
+  }
+
+  &_1 {}
+
+  &_2 {
+    transform: rotate(-90deg);
+  }
+
+  &_3 {}
+
+  &_4 {
+    transform: rotate(130deg);
+  }
+}
+
+.circles__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+.circles__wrapper .circle:not(:last-child) {
+  margin-right: 0.26vw;
+}

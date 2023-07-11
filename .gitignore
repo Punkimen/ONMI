@@ -1,1 +1,6 @@
 node_modules
+*.webm
+*.mp4
+*.mov
+#src/video
+dist/video

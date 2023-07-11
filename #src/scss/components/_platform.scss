@@ -1,0 +1,83 @@
+.platform {
+  padding: 10.42vw 0 10.42vw;
+
+  &__content {
+    max-width: 58.19vw;
+    width: 100%;
+    margin: 0 auto 3.7vw;
+    position: relative;
+  }
+
+  &__title {
+    perspective: 31.25vw;
+    margin-bottom: 3.23vw;
+    line-height: 1.6em;
+    position: relative;
+    top: 0.6em;
+  }
+
+  &__title-row {
+    &_1 {
+    }
+
+    &_2 {
+      padding-left: 15.28vw;
+    }
+  }
+
+  &__text {
+    max-width: 23.33vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    padding: 0 0.26vw;
+    min-height: 32.97vw;
+  }
+
+  &__btn {
+    border: 0.05vw solid #575757;
+    border-radius: 13.75vw;
+    width: 100%;
+    height: 27.50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .5s;
+  }
+
+  &__btn-text {
+    text-transform: uppercase;
+    color: #818181;
+    font-size: 0.94vw;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: -2.19vw;
+  }
+
+  &__btn-label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-icon {
+    width: 2.50vw;
+    margin-right: 0.52vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__btn-name {
+    font-size: 2.55vw;
+    letter-spacing: -0.01em;
+  }
+}

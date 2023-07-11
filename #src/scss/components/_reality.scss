@@ -1,0 +1,76 @@
+.reality {
+  padding: 0 0 11.72vw;
+
+  &__text {
+    font-weight: 600;
+    font-size: 1.25vw;
+    letter-spacing: -0.02em;
+    line-height: 1.38em;
+    color: #fff;
+    max-width: 30.47vw;
+    width: 100%;
+    margin: 0 auto 12vw;
+    text-align: center;
+
+    &_small {
+      font-size: 1.25vw;
+      letter-spacing: -0.04vw;
+      line-height: 1.4em;
+      max-width: 24.48vw;
+      width: 100%;
+      margin-bottom: 4vw;
+    }
+  }
+
+  &__screens {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11.08vw;
+  }
+
+  &__screen {
+    max-width: 15.31vw;
+    width: 100%;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 2.19vw;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &_1 {
+      //left: 17.5vw;
+    }
+
+    &_2 {
+      z-index: 5;
+    }
+
+    &_3 {
+      //right: 17.5vw;
+    }
+  }
+
+  &__decor {
+    width: 8.28vw;
+    height: 8.28vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
