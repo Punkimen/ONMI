@@ -4,8 +4,7 @@
   &__anim {
     width: 100%;
     height: 25.94vw;
-    //background: linear-gradient(rgba(#111, 1) 0%, rgba(#222, 1) 50%, rgba(#111, 1) 100%);
-    margin-bottom: 7vw;
+    margin-bottom: 10vw;
 
     canvas {
       width: 100% !important;
@@ -15,21 +14,13 @@
     }
   }
 
-  &__title {
-    color: #5B5B5B;
-    text-align: center;
-    margin-bottom: 2.1vw;
-    font-size: 3.13vw;
-  }
-
   &__text {
     text-align: center;
     color: #fff;
-    font-size: 1.04vw;
-    line-height: 1.4em;
-    max-width: 39.84vw;
+    font-size: 1.25vw;
+    line-height: 1.6em;
     width: 100%;
-    margin: 0 auto 8.3vw;
+    margin: 0 auto 6.4vw;
   }
 
   &__coop {
@@ -46,7 +37,7 @@
 }
 
 .sound-season {
-  max-width: 11.20vw;
+  //max-width: 11.20vw;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -78,8 +69,7 @@
     heihgt: 11.20vw;
     padding: 1.41vw 2.60vw 2.08vw 2.60vw;
     border-radius: 1.41vw;
-    border: 0.05vw solid rgba(255, 255, 255, .3);
-    background: #0A0A0A;
+    background: #141414;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +78,17 @@
     &_unknown {
       width: 9.06vw;
       height: 9.06vw;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+      }
 
       .sound-season__photo {
         width: 3.44vw;

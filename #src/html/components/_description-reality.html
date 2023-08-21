@@ -1,9 +1,11 @@
-<section class="description-reality">
-    <picture>
-        <source media="(max-width:768px)" srcset="./img/reality_bg_mob.png">
-        <!--   <noscript data-webp>
-             <img src="./img/reality_bg.png">
-           </noscript>-->
-        <img src="./img/reality_bg.png" data-effect="opacity" data-delay="0.2">
-    </picture>
+<section class="description-reality" data-effect="opacity" data-delay="0.2">
+  <picture>
+    <source media="(max-device-width:768px)" srcset="./img/reality_bg_mob.webp">
+    <noscript data-webp>
+      <img class="description-reality_bg" src="./img/reality_bg_half.png" alt="decor bg">
+    </noscript>
+  </picture>
+  <noscript data-webp>
+    <img class="description-reality_bg description-reality_bg_2" alt="decor bg" src="./img/reality_bg_half.png">
+  </noscript>
 </section>

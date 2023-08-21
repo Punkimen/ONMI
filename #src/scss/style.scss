@@ -1,9 +1,11 @@
 @import 'mixin';
 @import 'fonts';
-@import './components/animation';
 @import 'vars';
+@import './components/animation';
+@import './components/circleAnim';
 @import './components/header';
 @import './components/burger';
+@import './components/mobMenu';
 @import './components/hero';
 @import './components/reality';
 @import './components/fixed-btns';
@@ -17,7 +19,7 @@
 //@import './components/descover';
 @import './components/sound';
 @import './components/pvp';
-@import './components/level';
+//@import './components/level';
 @import './components/market';
 @import './components/hunger-games';
 //@import './components/steps';
@@ -30,10 +32,13 @@
 @import './components/tokemonics';
 @import './components/roadmap';
 @import './components/security';
-@import './components/policy';
+//@import './components/policy';
 //@import './components/team';
 //@import './components/vacancy';
 @import './components/questions';
 @import './components/platform';
-@import './components/keep';
+//@import './components/keep';
+@import './components/footer';
+@import './components/modal';
 @import './components/webp';
+

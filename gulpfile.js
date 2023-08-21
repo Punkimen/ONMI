@@ -118,7 +118,7 @@ function images() {
 	return src(path.src.img)
 		.pipe(webp())
 		.pipe(src(path.src.img))
-		.pipe(imagemin([
+		/*.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
 			imagemin.mozjpeg({quality: 90, progressive: true}),
 			imagemin.svgo({
@@ -127,7 +127,7 @@ function images() {
 					{cleanupIDs: false}
 				]
 			})
-		]))
+		]))*/
 		.pipe(dest(path.build.img))
 		.pipe(src(path.src.img))
 		.pipe(dest(path.build.img))

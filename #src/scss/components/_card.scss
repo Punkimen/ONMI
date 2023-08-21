@@ -1,5 +1,5 @@
 .cards {
-  padding: 0 0 9.79vw;
+  //padding: 0 0 9.79vw;
 
   &__wrapper {
     max-width: 52.71vw;
@@ -18,7 +18,7 @@
   }
 
   &__omies-text {
-    max-width: 20.63vw;
+    //max-width: 20.63vw;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -27,33 +27,29 @@
 }
 
 .card {
-  background-color: #121214;
+  background-color: #0F0F0F;
   border-radius: 2.60vw;
   position: relative;
   width: 100%;
   overflow: hidden;
   text-align: center;
 
+
   &:not(:last-child) {
     margin-bottom: 0.94vw;
   }
 
-  &__front {
-    background-color: #121214;
-    position: relative;
-  }
-
   &__front-img {
     position: relative;
-    transition: transform ease-in-out .05s;
 
     &_bg {
       position: absolute;
-      top: 50%;
+      top: -15%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -0%);
       width: 110%;
       height: 130%;
+
 
       img {
         display: block;
@@ -66,21 +62,21 @@
   }
 
   &_1 {
-    height: 42.81vw;
+    height: 37.81vw;
 
     .card__front-aura {
       position: absolute;
-      top: 1.98vw;
+      top: -1vw;
       left: 50%;
       transform: translateX(-50%);
-      transition: transform ease-in-out .05s;
+      max-width: 160px;
     }
 
     .card__front-img {
-      max-width: 25.52vw;
+      max-width: 16.52vw;
       width: 100%;
       position: absolute;
-      bottom: 0;
+      bottom: -16%;
       left: 50%;
       transform: translateX(-50%);
 
@@ -95,7 +91,7 @@
   }
 
   &_2 {
-    height: 33vw;
+    flex-grow: 1;
 
     .card__front {
       background-repeat: no-repeat;
@@ -104,7 +100,7 @@
 
       .card__front-img {
         position: absolute;
-        top: -40%;
+        top: -20%;
         left: 50%;
         transform: translate(-50%, 0);
         max-width: 15.31vw;
@@ -123,9 +119,6 @@
     height: 32vw;
 
     .card__front {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       background-repeat: no-repeat;
       background-size: 160%;
       background-position: center 75%;
@@ -133,10 +126,9 @@
 
       .card__front-img {
         position: absolute;
-        top: 26%;
+        top: 40%;
         left: -28%;
         width: 41.93vw;
-
         img {
           display: block;
           width: 100%;
@@ -147,7 +139,7 @@
 
     .card__title {
       max-width: 10.42vw;
-      margin: 0 auto;
+      margin: 0 auto 1.5vw;
       position: relative;
       z-index: 2;
     }
@@ -169,16 +161,16 @@
   }
 
   &__front {
+    background-color: #0F0F0F;
+    position: relative;
     padding: 4.2vw 3.2vw 3vw 3.6vw;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 
     &_centered {
       height: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
@@ -208,11 +200,13 @@
 
   &__text {
     opacity: 0.37;
+    margin: 0 auto;
   }
 
 }
 
 .omies {
+
   &__circles {
     max-width: 10.16vw;
     width: 100%;
@@ -244,7 +238,7 @@
       flex: 0 0 4.79vw;
       position: relative;
       z-index: 2;
-    }
+     }
 
     &_3 {
       position: relative;

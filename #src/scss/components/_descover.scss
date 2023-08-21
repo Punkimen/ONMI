@@ -1,7 +1,7 @@
 .descover {
   padding: 0vw 0 20vw;
 
-  @media(max-width:$md5) {
+  @media screen and (max-width:$md5) {
     padding: 0 0 40vw;
   }
 
@@ -11,12 +11,12 @@
     position: relative;
     z-index: 2;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       width: 100%;
       margin-bottom: 10.42vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       margin-bottom: 18.78vw;
     }
   }
@@ -24,11 +24,11 @@
   &__title {
     letter-spacing: -0.03em;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       margin-bottom: 6.51vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       margin-bottom: 11.74vw;
     }
   }
@@ -60,13 +60,13 @@
     bottom: 3.33vw;
     right: -4.2vw;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       width: 26vw;
       bottom: -2vw;
       right: -18vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       width: 75vw;
       text-align: center;
     }
@@ -96,15 +96,15 @@
     font-weight: 500;
     letter-spacing: -0.01em;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       font-size: 4.54vw;
     }
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       font-size: 3.91vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       font-size: 7.04vw;
       margin-bottom: 21.13vw;
     }
@@ -128,11 +128,11 @@
     margin: 0 auto;
     display: flex;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       width: 100%;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       display: block;
     }
   }
@@ -146,7 +146,7 @@
     position: absolute;
     z-index: 2;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       display: none;
     }
 
@@ -190,12 +190,12 @@
   height: 35.44vw;
   min-height: fit-content;
 
-  @media(max-width:$md3) {
+  @media screen and (max-width:$md3) {
     height: 50.40vw;
     min-height: fit-content;
   }
 
-  @media(max-width:$md5) {
+  @media screen and (max-width:$md5) {
     display: block;
     padding: 12.74vw 8.39vw;
     height: 112.20vw;
@@ -206,7 +206,7 @@
   &:not(:last-child) {
     margin-right: 0.68vw;
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       margin-right: 0;
       margin-bottom: 3.05vw;
     }
@@ -218,11 +218,11 @@
     line-height: 1.25em;
     margin-bottom: 1.5vw;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       font-size: 3.02vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       font-size: 5.16vw;
       margin-bottom: 7vw;
     }
@@ -235,11 +235,11 @@
     color: #DEDEDE;
     letter-spacing: 0.01em;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       font-size: 1.81vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       font-size: 3.29vw;
     }
   }

@@ -6,10 +6,6 @@
   z-index: 9;
   pointer-events: none;
 
-  @media(max-width: $md4) {
-    display: none;
-  }
-
   &__wrapper {
     display: flex;
     align-items: flex-end;

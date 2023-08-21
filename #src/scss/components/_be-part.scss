@@ -8,13 +8,6 @@
     left: -0.63vw;
     margin-bottom: 11.27vw;
 
-    @media(max-width:$md4) {
-      margin-bottom: 49vw;
-    }
-
-    @media(max-width:$md5) {
-      margin-bottom: 135vw;
-    }
   }
 
   &__title {
@@ -48,27 +41,10 @@
     pointer-events: none;
     z-index: 3;
 
-    @media(max-width:$md4) {
-      left: 50%;
-      left: 50%;
-      top: auto;
-      transform: translate(-50%, -20%);
-    }
-
-    @media(max-width:$md5) {}
-
     img {
       display: block;
       width: 81.41vw;
       height: auto;
-
-      @media(max-width:$md4) {
-        width: 48vw;
-      }
-
-      @media(max-width:$md5) {
-        width: 108vw;
-      }
     }
   }
 }
@@ -85,24 +61,12 @@
 .circle {
   position: relative;
 
-  @media(max-width:$md4) {
-    width: fit-content;
-  }
-
   img {
     display: block;
     width: 2.9vw;
     height: auto;
     position: relative;
     z-index: 2;
-
-    @media(max-width:$md4) {
-      width: 5.86vw;
-    }
-
-    @media(max-width:$md5) {
-      width: 13.56vw;
-    }
   }
 
   &::after {
@@ -111,19 +75,12 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0.26vw;
-
-    @media(max-width:$md5) {
-      bottom: 1vw;
-    }
   }
 
-  &_1 {}
 
   &_2 {
     transform: rotate(-90deg);
   }
-
-  &_3 {}
 
   &_4 {
     transform: rotate(130deg);

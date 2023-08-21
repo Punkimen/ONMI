@@ -1,39 +1,84 @@
-<header class="header animate" xmlns="http://www.w3.org/1999/html">
+<header class="header animate">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__left">
         <a href="#" class="header__logo">
-          <img src="img/logo.svg" alt="logo" data-effect="line" data-delay="0.2">
+          <img src="img/logo.svg" alt="logo" data-effect="opacity" class="first-load" data-delay="0.2">
         </a>
-        <a href="#" class="header__lang">
-          <span data-effect="line" data-delay="0.8">E</span>
-          <span data-effect="line" data-delay="0.9">N</span>
-        </a>
+        <div class="header__text">
+          <div class="header__text-row">
+            <span class="text-line first-load" data-delay="0.4">
+              next-gen app that combines entertainment and financial
+            </span>
+            <span class="text-line first-load" data-delay="0.4">
+              services within an engaging XR game.
+            </span>
+          </div>
+        </div>
       </div>
       <div class="header__right">
-        <div class="burger" data-effect="fade-down" data-delay="0.6">
-          <span ></span>
-          <span></span>
+        <a href="#" class="header__link first-load" data-effect="opacity" data-delay="0.7">
+          <span>Onmi Gallery</span>
+          <svg width="29" height="34" class="arrow_link">
+            <use xlink:href="./img/icons/icons.svg#arrow_link"></use>
+          </svg>
+        </a>
+        <a href="#" class="header__link first-load" data-effect="opacity" data-delay="0.8">
+          <span>Guide.doc</span>
+          <svg width="29" height="34" class="arrow_link">
+            <use xlink:href="./img/icons/icons.svg#arrow_link"></use>
+          </svg>
+        </a>
+        <button class="header__btn btn first-load" data-open="#modal" data-effect="opacity" data-delay="0.9">
+          Download
+          App
+        </button>
+        <div class="header__burger burger" data-effect="opacity" data-delay="0.2"><span></span><span></span>
         </div>
-        <div class="header__btns">
-          <a href="#" class="app-btn" data-effect="fade-down" data-duration="1" data-delay="0.4">
-            <img src="img/icons/apple.svg" alt="" class="app-btn__icon">
-            <span class="app-btn__text">App Store</span>
-          </a>
-          <a href="#" class="app-btn" data-effect="fade-down" data-duration="1" data-delay="0.5">
-            <img src="img/icons/googlePlay.svg" alt="" class="app-btn__icon">
-            <span class="app-btn__text">Google Play</span>
-          </a>
-        </div>
-        <!--  <a href="#" class="header__lang">
-            <span data-effect="line" data-delay="0.8">E</span>
-            <span data-effect="line" data-delay="0.9">N</span>
-          </a>
-          <div class="burger" data-effect="fade-down" data-delay="0.6">
-            <span ></span>
-            <span></span>
-          </div>
-        </div>-->
       </div>
     </div>
+  </div>
 </header>
+<div class="mob-menu">
+  <div class="container">
+    <a href="#" class="mob-menu__link header__link" data-delay="0.3">
+      <span>Onmi Gallery</span>
+      <svg width="29" height="34" class="arrow_link">
+        <use xlink:href="./img/icons/icons.svg#arrow_link"></use>
+      </svg>
+    </a>
+    <a href="#" class="mob-menu__link header__link" data-delay="0.4">
+      <span>Guide.doc</span>
+      <svg width="29" height="34" class="arrow_link">
+        <use xlink:href="./img/icons/icons.svg#arrow_link"></use>
+      </svg>
+    </a>
+    <div class="mob-menu__links" data-delay="0.5">
+      <div class="mob-menu__label">Social</div>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__elem" >
+          <a href="#" class="mob-menu__link">Instagram</a>
+        </li>
+        <li class="mob-menu__elem" >
+          <a href="#" class="mob-menu__link">𝕏 (Twitter)</a>
+        </li>
+        <li class="mob-menu__elem" >
+          <a href="#" class="mob-menu__link">Telegram</a>
+        </li>
+        <li class="mob-menu__elem" >
+          <a href="#" class="mob-menu__link">Discord</a>
+        </li>
+      </ul>
+    </div>
+    <form id="mob-menu__form" action="" class="mob-menu__form form">
+      <div class="form__field" data-delay="0.6">
+        <input type="text" name="email" autocomplete="off" placeholder="Email" class="form__input">
+        <div class="line line__bottom"></div>
+      </div>
+      <div class="form__text" data-delay="0.7">A game in which you can get into a hidden virtual layer over the city and the whole
+        world.
+      </div>
+      <button class="form__btn btn" data-delay="0.8">I’m in</button>
+    </form>
+  </div>
+</div>

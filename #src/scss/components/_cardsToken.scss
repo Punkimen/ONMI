@@ -1,6 +1,8 @@
 .cards-token {
   &__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.83vw;
     max-width: 52.81vw;
     width: 100%;
     margin: 0 auto;
@@ -23,15 +25,16 @@
   align-items: flex-start;
   padding: 3.85vw 2.81vw 4.11vw 2.81vw;
   border-radius: 2.60vw;
-  background: #121214;
-
-
-  &:not(:last-child) {
-    margin-bottom: 0.83vw;
-  }
+  background: #0F0F0F;
+  height: 34.38vw;
 
   &__icon {
     margin-bottom: 1.67vw;
+  }
+
+  &__content {
+    min-height: 16.67vw;
+    height: 63%;
   }
 
   &__title {
@@ -57,7 +60,15 @@
   }
 
   &_1 {
-    height: 42.81vw;
+    .card-token__icon {
+      max-width: 2.66vw;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
 
     .card-token__text {
       max-width: 18.75vw;
@@ -65,14 +76,38 @@
   }
 
   &_2 {
-    height: 32.86vw;
+    .card-token__icon {
+      max-width: 9.32vw;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &_3 {
-    height: 31.82vw;
+    .card-token__icon {
+      max-width: 2.50vw;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &_4 {
-    height: 43.85vw;
+    .card-token__icon {
+      max-width: 3.13vw;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }

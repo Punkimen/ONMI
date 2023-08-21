@@ -1,15 +1,35 @@
 <section class="each-point">
-  <h3 class="each-point__title">
-    <div class="text-line" data-delay="0.1">Each point on the planet holds its</div>
-    <div class="text-line" data-delay="0.2">
-      own history, <span class="color_gray">events, and, of course,</span>
+  <div class="container">
+    <h3 class="each-point__title">
+      <div class="text-line" data-delay="0.1">
+        <span class="text-desktop">Every place on Earth has its unique</span>
+        <span class="text-mob">Every place on Earth</span>
+      </div>
+      <div class="text-line" data-delay="0.2">
+      <span class="text-desktop">
+        history, <span class="color_gray">events, and lasting impressions</span>
+      </span>
+        <span class="text-mob">has its unique history,</span>
+      </div>
+      <div class="text-line color_gray" data-delay="0.3">
+        <span class="text-desktop">of the people who were</span>
+        <span class="text-mob">events, and lasting</span>
+      </div>
+      <div class="text-line color_gray" data-delay="0.4">
+        <span class="text-desktop">there.</span>
+        <span class="text-mob">impressions of the</span>
+      </div>
+      <div class="text-line color_gray text-mob" data-delay="0.5">
+        people who were
+      </div>
+      <div class="text-line color_gray text-mob" data-delay="0.5">
+        there.
+      </div>
+    </h3>
+    <div class="each-point__text">
+      <div class="text-line" data-delay="0.3">We've prepared signature</div>
+      <div class="text-line" data-delay="0.4">itineraries from</div>
     </div>
-    <div class="text-line color_gray" data-delay="0.3">the impressions of the personalities</div>
-    <div class="text-line color_gray" data-delay="0.4">behind them.</div>
-  </h3>
-  <div class="each-point__text">
-    <div class="text-line" data-delay="0.3">We've prepared signature</div>
-    <div class="text-line" data-delay="0.4">itineraries from</div>
   </div>
   <div class="each-point__circles">
     <div class="each-point__circle">
@@ -20,20 +40,20 @@
     </div>
     <div class="each-point__circle">
       <div class="each-point__circle-text">
-        <span class="text-line" data-delay="0.1">brands that tell their</span>
-        <span class="text-line" data-delay="0.2">stories</span>
+        <span class="text-line" data-delay="0.3">brands that tell their</span>
+        <span class="text-line" data-delay="0.4">stories</span>
       </div>
     </div>
     <div class="each-point__circle">
       <div class="each-point__circle-text">
-        <span class="text-line" data-delay="0.1">bright urban personalities</span>
-        <span class="text-line" data-delay="0.2">in each region</span>
+        <span class="text-line" data-delay="0.5">bright urban personalities</span>
+        <span class="text-line" data-delay="0.6">in each region</span>
       </div>
     </div>
     <div class="each-point__circle">
       <div class="each-point__circle-text">
-        <span class="text-line" data-delay="0.1">local squatters who know</span>
-        <span class="text-line" data-delay="0.2">the secrets of the city</span>
+        <span class="text-line" data-delay="0.7">local squatters who know</span>
+        <span class="text-line" data-delay="0.8">the secrets of the city</span>
       </div>
     </div>
   </div>
@@ -65,26 +85,56 @@
     <div class="each-point__mark each-point__mark_9">
       <img src="img/icons/map_marker.svg" alt="marker">
     </div>
-    <svg viewBox="0 0 1920 347">
+    <div class="each-point__svg_mob">
+      <img src="./img/router_mob.svg" alt="router">
+    </div>
+    <svg class="each-point__svg" viewBox="0 0 1920 347">
       <symbol id="line">
-        <path d="M-97.6667 1.24023C-97.6667 1.24023 -42.2787 303.127 117.63 276.958C277.538 250.789 281.155 223.221 239.079
-        153.252C197.004 83.2828 152.28 334.649 235.894 345.648C319.509 356.647 401.56 46.3031 650.391 123.286C899.222
-        200.269 656.872 336.666 597.292 289.254C537.712 241.843 924.991 72.3971 1160.33 86.5552C1395.68 100.713 1381.74
-        282.434 1501.97 210.822C1622.21 139.211 1677.32 74.7717 1570.34 97.2571C1463.36 119.742 1576.05 275.001 1720.52
-        275.001C1865 275.001 1959.68 123.286 1959.68 123.286" stroke="#D6F82E" stroke-width="2"
+        <path class="path" d="M-97.6667 1.24023C-97.6667 1.24023 -42.2787 303.127 117.63 276.958C277.538 250.789 281.155 223.221 239.079
+         153.252C197.004 83.2828 152.28 334.649 235.894 345.648C319.509 356.647 401.56 46.3031 650.391 123.286C899.222
+         200.269 656.872 336.666 597.292 289.254C537.712 241.843 924.991 72.3971 1160.33 86.5552C1395.68 100.713 1381.74
+         282.434 1501.97 210.822C1622.21 139.211 1677.32 74.7717 1570.34 97.2571C1463.36 119.742 1576.05 275.001 1720.52
+         275.001C1865 275.001 1959.68 123.286 1959.68 123.286" stroke="#D6F82E" stroke-width="2"
               stroke-linecap="round"></path>
       </symbol>
       <mask id="mask">
         <use class="mask" xlink:href="#line" stroke="#000"></use>
       </mask>
-      <use class="dashed" xlink:href="#line" mask="url(#mask)" stroke="#000" stroke-width="2" stroke-dasharray="6"
+      <use class="dashed" xlink:href="#line" mask="url(#mask)" stroke="#000" stroke-width="2" stroke-dasharray="5"
            opacity="1"></use>
     </svg>
   </div>
+  <div class="container">
+    <ul class="each-point__list">
+      <li class="each-point__elem">
+        <span class="text-line" data-delay="0.1">music stars with their</span>
+        <span class="text-line" data-delay="0.2">vivid memories</span>
+      </li>
+      <li class="each-point__elem">
+        <span class="text-line" data-delay="0.1">brands that tell their</span>
+        <span class="text-line" data-delay="0.2">stories</span>
+      </li>
+      <li class="each-point__elem">
+        <span class="text-line" data-delay="0.1">bright urban personalities</span>
+        <span class="text-line" data-delay="0.2">in each region</span>
+      </li>
+      <li class="each-point__elem">
+        <span class="text-line" data-delay="0.1">local squatters who know</span>
+        <span class="text-line" data-delay="0.2">the secrets of the city</span>
+      </li>
+      <li class="each-point__elem">
+        <span class="text-line" data-delay="0.1">A special category will be the</span>
+        <span class="text-line" data-delay="0.2">Intentional Routes with</span>
+        <span class="text-line" data-delay="0.3">metropolitan nightlife, bar and</span>
+        <span class="text-line" data-delay="0.4">restaurant guides, and scenic</span>
+        <span class="text-line" data-delay="0.5">natural sites</span>
+      </li>
+    </ul>
+  </div>
   <div class="each-point__text each-point__text_2">
-    <div class="text-line" data-delay="0.1">A special category will be the Intentional Routes with</div>
-    <div class="text-line" data-delay="0.2"> metropolitan nightlife, bar and restaurant guides, and</div>
-    <div class="text-line" data-delay="0.3">scenic natural sites.</div>
+    <div class="text-line" data-delay="0.1">A special category will include routes with underground</div>
+    <div class="text-line" data-delay="0.2">nightlife, bar and restaurant guides, and scenic natural</div>
+    <div class="text-line" data-delay="0.3">sites.</div>
   </div>
 </section>
 

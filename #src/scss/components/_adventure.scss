@@ -1,24 +1,12 @@
 .adventure {
-  padding: 10.81vw 0 7.81vw;
+  //padding: 0vw 0 7.81vw;
   position: relative;
-
-  @media(max-width: $md5) {
-    padding: 7.81vw 0 22.81vw;
-  }
 
   &__content {
     position: relative;
     width: 41vw;
-    margin: 0 auto 14vw;
+    margin: 0 auto 8vw;
     position: relative;
-
-    @media(max-width: $md4) {
-      width: 100%;
-    }
-
-    @media(max-width: $md5) {
-      margin-bottom: 29.3vw;
-    }
   }
 
   &__title {
@@ -26,86 +14,23 @@
     letter-spacing: -0.26vw;
     margin-bottom: 3.5vw;
     position: relative;
-    top:7vw;
-    @media(max-width: $md4) {
-      margin-bottom: 4.56vw;
-    }
-
-    @media(max-width: $md5) {
-      margin-bottom: 8.8vw;
-    }
+    top: 7vw;
 
     & > * {
       min-width: 100%;
-
-      @media(max-width: $md5) {
-        min-width: auto;
-      }
-    }
-  }
-
-  &__title-row {
-    display: block;
-    perspective: 31.25vw;
-
-    &:not(:first-child) {
-      position: relative;
-      top: -0.74em;
-    }
-
-    &_1 {
-      padding-left: 5vw;
-
-      @media(max-width: $md5) {
-        max-width: 46vw;
-        margin: 0 auto;
-
-        & > * {
-          text-align: left;
-        }
-      }
-    }
-
-    &_2 {
-      // padding-left: 15.9vw;
-      padding-left: 12.5vw;
-      transition-delay: .2s;
-
-      @media(max-width: $md5) {
-        max-width: 46vw;
-        min-width: auto;
-        margin: 0 auto;
-
-        & > * {
-          text-align: left !important;
-        }
-      }
-    }
-
-    &_3 {
-      text-align: center;
-      transition-delay: .4s
     }
   }
 
   &__text {
-    max-width: 24.5vw;
+    max-width: 35.5vw;
     margin: 0 auto;
     /*   right: -8.8vw;
        bottom: -2.03vw;
        position: absolute;*/
 
-    @media(min-width: $md0) {
+    @media screen and (min-width: $md0) {
       font-size: 1vw;
       letter-spacing: .04em;
-    }
-
-    @media(max-width: $md4) {
-      max-width: 36.5vw;
-    }
-
-    @media(max-width: $md5) {
-      max-width: 70.24vw;
     }
   }
 }
@@ -124,26 +49,12 @@
     left: 3.2vw;
     position: relative;
     z-index: 2;
-
-    @media(max-width: $md3) {
-      margin: 0;
-      max-width: 50vw;
-    }
-
-    @media(max-width: $md4) {
-      display: none;
-    }
   }
 
   &__phone-img {
     width: 31.77vw;
     position: relative;
     z-index: 2;
-
-    @media(max-width: $md3) {
-      width: 50vw;
-    }
-
   }
 
   &__phone-phone {
@@ -178,14 +89,16 @@
     top: 0.89vw;
     left: 50%;
     transform: translateX(-67%);
-
-    @media(max-width: $md3) {
-      max-width: 28.27vw;
-    }
   }
 
   &__phone-slide {
     transition-duration: 1s;
+
+    video {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
     img {
       object-fit: cover;
@@ -203,53 +116,16 @@
   right: 0;
   z-index: 5;
 
-  @media(max-width: $md4) {
-    position: relative;
-    top: 0;
-    transform: translateY(0);
-  }
-
   &__slider {
     max-width: 30vw;
     width: 100%;
     padding-bottom: 13.80vw;
-
-    @media(max-width: $md3) {
-      max-width: 46.37vw;
-    }
-
-    @media(max-width: $md4) {
-      max-width: 100%;
-    }
-
-    .swiper-wrapper {
-      @media(max-width: $md5) {
-        transform: translateX(-17vw);
-      }
-    }
   }
 
   &__slide {
     max-width: 20.21vw;
     width: 100%;
     height: 14.64vw;
-
-    @media(max-width: $md3) {
-      max-width: 39.11vw;
-      height: 28.23vw;
-    }
-
-    @media(max-width: $md4) {
-      max-width: 100%;
-      height: auto;
-      display: flex;
-      align-items: center;
-      left: -4vw;
-    }
-
-    @media(max-width: $md5) {
-      left: 0;
-    }
 
     &.swiper-slide-next {
       .cards-slider__descr {
@@ -266,30 +142,42 @@
 
   &__phone {
     display: none;
-
-    @media(max-width: $md4) {
-      width: 27.47vw;
-      display: block;
-      margin-right: 4.69vw;
-
-    }
-
-    @media(max-width: $md5) {
-      min-width: 50.53vw;
-      margin-right: 5.45vw;
-    }
+    position: relative;
+    overflow: hidden;
+    border-radius: 9.52vw;
 
     img {
       display: block;
       width: 100%;
       height: auto;
     }
+
+    .adventure__phone-phone {
+      max-width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    video {
+      position: absolute;
+      z-index: 1;
+      width: 97%;
+      top: 0;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__block {
-    background: #121214;
+    background: #0F0F0F;
     border-radius: 2.71vw;
-
     width: 100%;
     height: 100%;
     min-height: fit-content;
@@ -299,17 +187,6 @@
     justify-content: space-between;
     font-weight: 500;
     transition: right ease .5s;
-
-    @media(max-width: $md4) {
-      max-width: 50.39vw;
-      height: 36.59vw;
-      background: none;
-      border-radius: 0;
-    }
-
-    @media(max-width: $md5) {
-      height: 42.59vw;
-    }
   }
 
   &__descr {
@@ -317,38 +194,11 @@
     width: 100%;
     line-height: 1.4;
     transition: all ease .2s;
-
-    @media(max-width: $md3) {
-      max-width: 22.38vw;
-      font-size: 2.02vw;
-    }
-
-    @media(max-width: $md4) {
-      font-size: 2.60vw;
-      max-width: 28.91vw;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 4.69vw;
-      max-width: 52.11vw;
-    }
+    font-size: 0.83vw;
   }
 
   &__num {
     font-size: 0.94vw;
-
-    @media(max-width: $md3) {
-      font-size: 1.81vw;
-    }
-
-    @media(max-width: $md4) {
-      font-size: 2.34vw;
-      opacity: 0.3;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 4.23vw;
-    }
   }
 
   &__btn {
@@ -356,10 +206,6 @@
     left: 0;
     bottom: 2.34vw;
     user-select: none;
-
-    @media(max-width: $md4) {
-      display: none;
-    }
 
     &.swiper-button-disabled {
       opacity: 0.5 !important;

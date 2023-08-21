@@ -5,20 +5,31 @@
   &__title {
     font-size: 3.13vw;
   }
-&__wrapper{
-  position: relative;
-  z-index: 2;
-}
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
   &__inner {
     padding-top: 3.65vw;
+    padding-bottom: 10vw;
     position: relative;
   }
 
   &__earth {
-    margin: 19.11vw 0 -20.47vw;
+    margin: 19.11vw auto -20.47vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 41.77vw;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__text {
@@ -31,7 +42,7 @@
     p {
       &:not(:last-child) {
         margin-bottom: 3.23vw;
-      }
+        }
     }
   }
 }

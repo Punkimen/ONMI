@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ONMI</title>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#dacdca">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" rel="preload">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css" media="all">
+  <link rel="stylesheet" href="css/media1440.min.css" media="only screen and (max-width:1440px)">
+  <link rel="stylesheet" href="css/media1200.min.css" media="only screen and (max-width:1200px)">
+  <link rel="stylesheet" href="css/media992.min.css" media="only screen and (max-width:992px)">
+  <link rel="stylesheet" href="css/media768.min.css" media="only screen and (max-width:768px)">
+  <link rel="stylesheet" href="css/media568.min.css" media="only screen and (max-width:568px)">
 </head>
 
 <body>
@@ -22,54 +33,116 @@
     <div class="container">
       <div class="description-reality__inner">
         <div class="description-reality__text">
-          <p>A game in which you can get into a hidden virtual layer over the city and the whole world.</p>
-          <p>Here you can earn money, find valuable digital art, participate in an international Hunger Games
-            tournament,
-            enter a social competition, activate access to real goods from fashion brands, stars and artists, and
-            discover corners of this world in secret itineraries.</p>
+          <p>Discover a <span class="decor-text">secret virtual layer</span> overlaying your city and the
+            entire world.
+          </p>
+          <p>Earn money, find priceless digital art, participate in Hunger Games tournaments, compete online,
+            and access
+            genuine items from fashion brands, celebrities, and artists. With ONMI, you will discover
+            corners of this
+            world
+            in secret adventures.</p>
         </div>
       </div>
     </div>
   </div>
-  <div id="smooth-wrapper" class="smooth-wrapper">
-    <div id="smooth-content" class="smooth-content">
-      @@include('components/_hero.html')
-      @@include('components/_description-reality.html')
-      @@include('components/_reality.html')
-      @@include('components/_adventure.html')
-      @@include('components/_create.html')
-      @@include('components/_cards.html')
-      @@include('components/_find.html')
-      @@include('components/_journeyCards.html')
-      @@include('components/_eachPoint.html')
-      @@include('components/_pvp.html')
-      @@include('components/_level.html')
-      @@include('components/_sound.html')
-      @@include('components/_market.html')
-      @@include('components/_hunger-games.html')
-      @@include('components/_mission.html')
-      @@include('components/_culture.html')
-      @@include('components/_token.html')
-      @@include('components/_cardsToken.html')
-      @@include('components/_tokemonics.html')
-      @@include('components/_security.html')
-      @@include('components/_roadmap.html')
-      @@include('components/_policy.html')
-      @@include('components/_questions.html')
-      @@include('components/_platform.html')
-      @@include('components/_keep.html')
+  @@include('components/_hero.html')
+  @@include('components/_description-reality.html')
+  @@include('components/_reality.html')
+  <div class="decor-line__wrapper">
+    <div class="decor-line" data-effect="opacity" data-duration="0.8">
+      <svg class="decor-line__svg" xmlns="http://www.w3.org/2000/svg"
+           fill="none">
+        <path d="M1 1V311" stroke="url(#paint0_linear_0_1214)" stroke-linecap="square"/>
+        <defs>
+          <linearGradient id="paint0_linear_0_1214" x1="0.5" y1="0.5" x2="0.5" y2="311.5"
+                          gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="1" stop-color="#979797"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
   </div>
-
+  @@include('components/_adventure.html')
+  <div class="decor-line__wrapper">
+    <div class="decor-line" data-effect="opacity" data-duration="0.8">
+      <svg class="decor-line__svg" xmlns="http://www.w3.org/2000/svg"
+           fill="none">
+        <path d="M1 1V311" stroke="url(#paint0_linear_0_1214)" stroke-linecap="square"/>
+        <defs>
+          <linearGradient id="paint0_linear_0_1214" x1="0.5" y1="0.5" x2="0.5" y2="311.5"
+                          gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="1" stop-color="#979797"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  @@include('components/_create.html')
+  @@include('components/_cards.html')
+  <div class="decor-line__wrapper">
+    <div class="decor-line" data-effect="opacity" data-duration="0.8">
+      <svg class="decor-line__svg" xmlns="http://www.w3.org/2000/svg"
+           fill="none">
+        <path d="M1 1V311" stroke="url(#paint0_linear_0_1214)" stroke-linecap="square"/>
+        <defs>
+          <linearGradient id="paint0_linear_0_1214" x1="0.5" y1="0.5" x2="0.5" y2="311.5"
+                          gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="1" stop-color="#979797"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  @@include('components/_find.html')
+  @@include('components/_journeyCards.html')
+  @@include('components/_eachPoint.html')
+  <div class="decor-line__wrapper">
+    <div class="decor-line" data-effect="opacity" data-duration="0.8">
+      <svg class="decor-line__svg" xmlns="http://www.w3.org/2000/svg"
+           fill="none">
+        <path d="M1 1V311" stroke="url(#paint0_linear_0_1214)" stroke-linecap="square"/>
+        <defs>
+          <linearGradient id="paint0_linear_0_1214" x1="0.5" y1="0.5" x2="0.5" y2="311.5"
+                          gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="1" stop-color="#979797"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  @@include('components/_pvp.html')
+  @@include('components/_sound.html')
+  @@include('components/_market.html')
+  @@include('components/_hunger-games.html')
+  @@include('components/_mission.html')
+  @@include('components/_culture.html')
+  @@include('components/_token.html')
+  @@include('components/_cardsToken.html')
+  @@include('components/_tokemonics.html')
+  @@include('components/_security.html')
+  @@include('components/_roadmap.html')
+  @@include('components/_questions.html')
+  @@include('components/_platform.html')
+  @@include('components/_footer.html')
+  @@include('components/_modal.html')
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/libs/gsap.min.js"></script>
-<script src="./js/libs/ScrollSmoother.min.js"></script>
 <script src="./js/libs/ScrollTrigger.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 <script src="./js/libs/marquee3k.min.js"></script>
 <script async src="./js/libs/simple-webp.min.js"></script>
-<script src="./js/libs/sine-waves.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+<script src="./js/libs/sine-waves.min.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/@master/.min.js"></script>-->
 <script src="js/script.min.js" type="module" defer></script>
 </body>

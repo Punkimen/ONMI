@@ -1,9 +1,9 @@
 .each-point {
-  padding: 4.01vw 0 7.81vw;
+  padding: 4.01vw 0 0vw;
 
   &__title {
     font-size: 2.45vw;
-    max-width: 41.30vw;
+    //max-width: 50vw;
     width: 100%;
     margin: 0 auto 3.85vw;
     text-align: center;
@@ -11,14 +11,12 @@
 
   &__text {
     text-align: center;
-    max-width: 15.63vw;
     width: 100%;
     margin: 0 auto 4.95vw;
     line-height: 1.8em;
     font-size: 0.94vw;
 
     &_2 {
-      max-width: 26.04vw;
       margin: 0 auto;
     }
   }
@@ -46,7 +44,8 @@
   &__circle-text {
     max-width: 15.63vw;
     width: 100%;
-  }
+    font-size: 0.94vw;
+   }
 
   &__route {
     position: relative;
@@ -55,23 +54,40 @@
   }
 
   &__svg {
-    display: block;
     width: 100vw;
+    height: 18.07vw;
 
-    svg {
-      width: 100vw;
+    &_mob {
+      display: none;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
+  }
+  .dashed {
+    width: 100vw;
+    height: 18.07vw;
   }
 
   .mask {
-    stroke-dasharray: 200vw;
-    stroke-dashoffset: 200vw;
+    stroke-dasharray: 3810;
+    stroke-dashoffset: 3810;
   }
 
   &__mark {
     position: absolute;
     opacity: 0;
     transition: opacity ease-out .1s;
+    max-width: 0.52vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
     &.show {
       opacity: 1;
@@ -79,17 +95,17 @@
 
     &_1 {
       left: 11.09vw;
-      top: 5.42vw;
+      top: 6vw;
     }
 
     &_2 {
-      bottom: 0.36vw;
+      bottom: 1vw;
       left: 12.19vw;
     }
 
     &_3 {
       left: 32.40vw;
-      top:4.38vw;
+      top: 4.7vw;
     }
 
     &_4 {
@@ -99,12 +115,12 @@
 
     &_5 {
       left: 31.77vw;
-      bottom: 2.92vw;
+      bottom: 3.5vw;
     }
 
     &_6 {
-      left: 53.02vw;
-      top: 3.13vw;
+      left: 54.02vw;
+      top: 3.7vw;
     }
 
     &_7 {
@@ -118,8 +134,34 @@
     }
 
     &_9 {
-      bottom: 4.79vw;
+      bottom: 5.2vw;
       right: 5.89vw;
     }
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__elem {
+    position: relative;
+    padding-left: 4vw;
+
+    &::before {
+      content: '';
+      display: block;
+      background: url("../img/icons/map_marker.svg");
+      background-size: cover;
+      width: 1vw;
+      height: 1.2vw;
+      position: absolute;
+      top: 0.6vw;
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4vw;
+    }
+
   }
 }

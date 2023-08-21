@@ -8,20 +8,6 @@
     // border: 0.05vw solid #fff;
     border-radius: 50%;
     margin: 0 auto 14.90vw;
-
-    @media(max-width: $md4) {
-      width: 85.29vw;
-      height: 85.29vw;
-    }
-
-    @media(max-width: $md5) {
-      width: 152.76vw;
-      height: 152.76vw;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 16.9vw;
-    }
   }
 
   &__circle-content {
@@ -37,15 +23,6 @@
     font-size: 1.09vw;
     margin-bottom: 0.78vw;
     color: rgba(255, 255, 255, 0.44);
-    @media(max-width: $md4) {
-      font-size: 2.73vw;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 4.93vw;
-    }
-
-
   }
 
   &__circle-name {
@@ -53,18 +30,10 @@
     font-size: 6.25vw;
     letter-spacing: -0.01em;
     line-height: 1.1em;
-
-    @media(max-width: $md4) {
-      font-size: 13.93vw;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 25.12vw;
-    }
   }
 
   &__circle-shadow {
-    box-shadow: 0px 0px 5.99vw 1.04vw rgba(255, 255, 255, 0.50) inset, 0px 0px 2.08vw 0.42vw rgba(255, 255, 255, 0.50) inset;;
+    box-shadow: 0px 0px 5.99vw 1.04vw rgba(255, 255, 255, 0.50) inset, 0px 0px 2.08vw 0.42vw rgba(255, 255, 255, 0.50) inset;
     // box-shadow: 0px 0px 2.60vw 1.56vw rgb(255 255 255 / 75%) inset;
     //box-shadow: inset 0px 0px 2.08vw 0.42vw rgba(255, 255, 255, 0.5), inset 0px 0px 6.51vw 1.04vw rgba(255, 255, 255, 0.5);
     width: 36.98vw;
@@ -75,25 +44,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @media(max-width: $md4) {
-      width: 60.81vw;
-      height: 60.81vw;
-    }
-
-    @media(max-width: $md5) {
-      width: 109.62vw;
-      height: 109.62vw;
-      box-shadow: none;
-    }
   }
 
   &__wrapper {
     display: flex;
-
-    @media(max-width: $md4) {
-      display: block;
-    }
   }
 
   &__card {
@@ -104,51 +58,14 @@
     height: 25.42vw;
     min-height: fit-content;
 
-    @media(max-width: $md3) {
-      height: 35.58vw;
-    }
-
-    @media(max-width: $md4) {
-      height: 45.96vw;
-      padding: 5.86vw 5.21vw;
-    }
-
-    @media(max-width: $md5) {
-      padding: 10.56vw 9.39vw;
-      height: 82.86vw;
-      border-radius: 12vw;
-    }
-
     &:not(:last-child) {
       margin-right: 1.04vw;
-
-      @media(max-width: $md4) {
-        margin-right: 0;
-        margin-bottom: 1.95vw;
-      }
-
-      @media(max-width: $md5) {
-        margin-bottom: 3.52vw;
-      }
     }
   }
 
   &__card-label {
     font-size: 1.61vw;
     margin-bottom: 2.08vw;
-
-    @media(max-width: $md3) {
-      font-size: 2.72vw;
-    }
-
-    @media(max-width: $md4) {
-      font-size: 3.52vw;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 6.34vw;
-      margin-bottom: 4.69vw;
-    }
   }
 
   &__card-text {
@@ -158,19 +75,6 @@
     max-width: 19.27vw;
     width: 100%;
     color: var(--color-gray);
-
-    @media (max-width: $md3) {
-      font-size: 1.61vw;
-      max-width: 100%;
-    }
-
-    @media(max-width: $md4) {
-      font-size: 2.08vw;
-    }
-
-    @media(max-width: $md5) {
-      font-size: 3.76vw;
-    }
   }
 }
 
@@ -181,55 +85,29 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  stroke: #fff;
 
   circle {
+    opacity: 1;
     // transition: all ease-in 1s;
     stroke-width: 0.10vw;
   }
 
   &_1 {
-    stroke: rgb(255 255 255 / 5%);
+    stroke: rgb(255 255 255 / 10%);
 
     circle {
-      r: calc(50% - 0.10vw);
+      stroke: rgb(255 255 255 / 10%);
       //stroke-dasharray: 320%;
       //stroke-dashoffset: 320%;
     }
   }
 
   &_2 {
-    stroke: rgb(255 255 255 / 10%);
-
-    circle {
-      //stroke-dasharray: 250%;
-      //stroke-dashoffset: 250%;
-
-      @media(max-width: $md4) {
-        stroke-dasharray: 285%;
-        stroke-dashoffset: 285%;
-        r: 45%;
-      }
-
-      @media(max-width: $md5) {
-      }
-    }
+    stroke: rgb(255 255 255 / 15%);
   }
 
   &_3 {
-    stroke: rgb(255 255 255 / 15%);
-
-    circle {
-      //stroke-dasharray: 220%;
-      //stroke-dashoffset: 220%;
-
-      @media(max-width: $md4) {
-        r: 38%;
-        stroke-dasharray: 240%;
-        stroke-dashoffset: 240%;
-      }
-
-      @media(max-width: $md5) {
-      }
-    }
+    stroke: rgb(255 255 255 / 20%);
   }
 }

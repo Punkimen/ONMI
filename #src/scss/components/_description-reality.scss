@@ -27,72 +27,40 @@
   }
 
   &__text {
+    font-family: 'Manrope', sans-serif;
     width: 100%;
-    font-weight: 600;
-    font-size: 1.46vw;
-    line-height: 2.08vw;
-    letter-spacing: -0.05vw;
+    font-weight: 400;
+    font-size: 1.20vw;
+    line-height: 1.5em;
+    letter-spacing: -0.01em;
     text-align: center;
     color: #000;
-    max-width: 30vw;
+    max-width: 40vw;
     width: 100%;
-
 
     &.show {
       opacity: 1;
     }
 
-    @media(prefers-color-scheme: light) {
+    @media screen and (prefers-color-scheme: light) {
       color: #000;
     }
 
-    @media(prefers-color-scheme: dark) {
+    @media screen and (prefers-color-scheme: dark) {
       color: #000;
     }
 
-    @media(max-width: $md3) {
-      font-size: 1.21vw;
-    }
-
-    @media(max-width: $md4) {
-      font-size: 1.56vw;
-    }
-
-    @media(max-width: $md5) {
-      max-width: 68.08vw;
-      font-weight: bold;
-      font-size: 2.82vw;
-      line-height: 1.65em;
-    }
 
     p {
       &:not(:last-child) {
-        margin-bottom: 2vw;
+        margin-bottom: 1.5vw;
 
-        @media(max-width: $md3) {
-          font-size: 1.21vw;
-        }
-
-        @media(max-width: $md4) {
-          font-size: 1.56vw;
-        }
-
-        @media(max-width: $md5) {
-          font-weight: bold;
-          font-size: 2.82vw;
-          margin-bottom: 5vw;
-        }
       }
 
       &:last-child {
-        @media(max-width: $md5) {
-          margin-top: 9vw;
-        }
+
       }
     }
-  }
-
-  &__gradient {
   }
 
   img {
@@ -102,6 +70,13 @@
     transition: opacity ease-in 1.2s;
     will-change: opacity;
   }
+
+  &_bg_2 {
+    transform: rotate(180deg);
+    position: relative;
+    top: -2px;
+
+  }
 }
 
 .bordered-text {
@@ -110,9 +85,4 @@
   border: 0.1em solid #000000;
   border-radius: 0.78vw;
 
-  @media(max-width: $md4) {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-  }
 }

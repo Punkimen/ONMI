@@ -1,7 +1,7 @@
 .step {
   padding-bottom: 41.67vw;
 
-  @media(max-width:$md5) {
+  @media screen and (max-width:$md5) {
     padding-bottom: 59.67vw;
   }
 
@@ -11,7 +11,7 @@
     display: flex;
     margin-bottom: 21.88vw;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       display: block;
 
       .line {
@@ -19,7 +19,7 @@
       }
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       margin-bottom: 52vw;
     }
   }
@@ -27,13 +27,13 @@
   &__descr {
     text-transform: uppercase;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       position: relative;
       padding-bottom: 3.91vw;
       margin-bottom: 6.51vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       padding-bottom: 5.91vw;
       margin-bottom: 11.7vw;
     }
@@ -41,7 +41,7 @@
     .line {
       display: none;
 
-      @media(max-width:$md4) {
+      @media screen and (max-width:$md4) {
         display: block;
       }
     }
@@ -54,13 +54,13 @@
     font-weight: 600;
     margin-bottom: 1.56vw;
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       font-size: 5.21vw;
       width: 30vw;
       position: relative;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       font-size: 9.39vw;
       width: 55vw;
     }
@@ -72,16 +72,16 @@
     font-size: 0.73vw;
     line-height: 1.8em;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       font-size: 1.41vw;
       width: 35.49vw;
     }
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       font-size: 1.82vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       font-size: 3.29vw;
       margin-top: 19.48vw;
       width: 84.04vw;
@@ -96,16 +96,16 @@
     font-size: 0.83vw;
     line-height: 1.68em;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       font-size: 1.41vw;
     }
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       font-size: 1.82vw;
       padding-right: 0;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       columns: 1;
       font-size: 3.29vw;
     }
@@ -117,17 +117,17 @@
     min-height: 5.73vw;
     margin-bottom: 4.58vw;
 
-    @media(max-width:$md3) {
+    @media screen and (max-width:$md3) {
       width: 24vw;
       padding-right: 3vw;
     }
 
-    @media(max-width:$md4) {
+    @media screen and (max-width:$md4) {
       width: 100%;
       padding-right: 6vw;
     }
 
-    @media(max-width:$md5) {
+    @media screen and (max-width:$md5) {
       padding-right: 0;
       width: 76vw;
 
@@ -153,7 +153,7 @@
       width: 1.20vw;
       height: 1.20vw;
 
-      @media(max-width:$md3) {
+      @media screen and (max-width:$md3) {
         font-size: 1.21vw;
         width: 2.32vw;
         height: 2.32vw;
@@ -161,7 +161,7 @@
         left: -3.02vw;
       }
 
-      @media(max-width:$md5) {
+      @media screen and (max-width:$md5) {
         position: relative;
         right: 0;
         top: 0;

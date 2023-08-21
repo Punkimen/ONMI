@@ -11,41 +11,18 @@
   letter-spacing: 0.05vw;
   z-index: 10;
   color: #ECECEC;
-  text-transform: uppercase;
-  transition: opacity .1s;
   // opacity: 0;
-  transition: transform .4s cubic-bezier(.87, 0, .13, 1);
-
-  @media(max-width: $md1) {
-    font-size: 0.83vw;
-  }
-
-  @media(max-width: $md2) {
-    font-size: 1vw;
-  }
-
-  @media(max-width: $md3) {
-    font-size: 1.21vw;
-  }
-
-  @media(max-width: $md4) {
-    padding: 4.23vw 0;
-  }
-
-  @media(max-width: $md5) {
-    padding: 6.23vw 0;
-  }
+  //transition: transform .4s cubic-bezier(.87, 0, .13, 1);
 
   &.element-show {
     opacity: 1;
   }
 
   &.hide {
-    transform: translateY(-100%);
-    transition: transform .8s cubic-bezier(.87, 0, .13, 1);
-  }
-
-  @media(min-width: 1920.05vw) {
+    .header__text {
+      transform: translateY(-300%);
+      transition: transform .8s cubic-bezier(.87, 0, .13, 1);
+    }
   }
 
   &__wrapper {
@@ -53,49 +30,32 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    @media(max-width: $md4) {
-      align-items: center;
-    }
   }
 
   &__left {
     margin-right: 2.08vw;
     display: flex;
-    align-items: flex-start;
     position: relative;
   }
 
   &__text {
     position: relative;
-    line-height: 1.2em;
-    top: 0.14em;
+    line-height: 1.1em;
+    top: 0.35em;
     transition: all ease-in .3s;
-
-    &.hide {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
+    font-size: .73vw;
+    letter-spacing: .06em;
+    text-transform: uppercase;
   }
 
-  &__lang {
-    display: flex;
-    text-transform: uppercase;
-    margin-right: 2.24vw;
-    line-height: 2.1em;
-
-    @media(max-width: $md5) {
-      font-size: 2.11vw;
-    }
+  &__text-row {
+    overflow: hidden;
   }
 
   &__logo {
-    margin-right: 1.3vw;
+    margin-right: 2.1vw;
     width: 5.21vw;
     min-width: 3.13vw;
-
-    @media(max-width: $md4) {
-      width: 14.08vw;
-    }
 
     img {
       display: block;
@@ -104,197 +64,58 @@
     }
   }
 
-  &__btns {
-    display: flex;
-    margin-left: 1.72vw;
-  }
-
-  &__nav {
-    position: relative;
-    margin-right: 0.9vw;
-    left: 10.9vw;
-
-    @media(max-width: $md2) {
-      margin-right: 1.42vw;
-      left: 0;
-    }
-
-    @media(max-width: $md4) {
-      display: none;
-    }
-  }
-
-  &__list {
-    display: flex;
-
-  }
-
-  &__list-elem {
-    &:not(:last-child) {
-      margin-right: 3.2vw;
-
-      @media(max-width: $md2) {
-        margin-right: 5.08vw;
-      }
-    }
-
-    &:first-child {
-      margin-right: 8vw;
-
-      @media(max-width: $md2) {
-        margin-right: 12.75vw;
-      }
-
-      @media(max-width: $md3) {
-        margin-right: 5.08vw;
-      }
-    }
-  }
-
-  &__link {
-    position: relative;
-
-    &::after {
-      content: '';
-      left: 50%;
-      bottom: 0vw;
-      width: 100%;
-      height: 0.05vw;
-      content: '';
-      position: absolute;
-      background: #fff;
-      transform: scaleX(0) translateX(-50%);
-      transform-origin: left;
-      transition: transform 0.4s ease-out;
-    }
-
-    &:hover {
-      color: rgb(197, 197, 197);
-
-      &::after {
-        transform: scaleX(1) translateX(-50%);
-      }
-    }
-
-    &_narrow {
-      letter-spacing: 0.001em;
-    }
-
-    &_roadmap {
-      margin-right: 9.2vw;
-
-      @media(max-width: $md2) {
-        margin-right: 14.67vw;
-      }
-
-      @media(max-width: $md3) {
-        margin-right: 9.2vw;
-      }
-    }
-  }
-
   &__right {
     display: flex;
     align-items: center;
-    @media(max-width: $md4) {
-      display: none;
-    }
   }
 
-  &__dropdow {
-  }
-}
-
-.dropdown {
-
-
-  &__header {
+  &__link {
+    font-size: 0.63vw;
     position: relative;
-    cursor: pointer;
+    width: fit-content;
+    margin-right: 1.09vw;
+    padding-right: 0.73vw;
+    letter-spacing: -0.01em;
 
-    span {
-      padding-right: 0.8vw;
-
-      @media(max-width: $md1) {
-        padding-right: 1.04vw;
+    .arrow_link {
+      content: '';
+      display: block;
+      width: 0.42vw;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      transition: fill, transform ease-in .3s;
+      fill: rgba(255, 255, 255, 0.3);
       }
 
-      @media(max-width: $md2) {
-        padding-right: 1.25vw;
+    &:hover {
+      .arrow_link {
+        fill: #fff;
+        transform: translate(25%, -50%);
       }
+    }
+  }
 
-      @media(max-width: $md3) {
-        padding-right: 1.51vw;
-      }
+  &__btn {
+    border: none;
+    outline: none;
+    min-width: 4.3vw;
+    background-color: #fff;
+    color: #000;
+    padding: .36vw .78vw .38vw .78vw;
+    font-size: 0.63vw;
+    margin-left: 1.6vw;
+    //transition-property: opacity, background-color !important;
+    transition: background-color ease-in-out 0.3s, opacity cubic-bezier(.16, .01, .77, 1) .6s 0.9s !important;
 
-      @media(max-width: $md4) {
-        padding-right: 1.95vw;
-      }
-
-      &::after {
-        content: '';
-        display: block;
-        width: 0.57vw;
-        height: 0.31vw;
-        background-image: url(../img/icons/arrow_small.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-
-        @media(max-width: $md1) {
-          width: 0.76vw;
-          height: 0.42vw;
-        }
-
-        @media(max-width: $md2) {
-          width: 0.92vw;
-          height: 0.50vw;
-        }
-
-        @media(max-width: $md3) {
-          width: 1.11vw;
-          height: 0.60vw;
-        }
-
-        @media(max-width: $md4) {
-          width: 1.43vw;
-          height: 0.78vw;
-        }
-      }
+    &:hover {
+      background-color: #c4c4c4;
     }
   }
 }
 
-.app-btn {
-  border-radius: 0.36vw;
-  background-color: rgba(32, 32, 32, 0.71);
-  backdrop-filter: blur(0.78vw);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.26vw 0.89vw 0.26vw 0.68vw;
-  text-transform: capitalize;
-  font-size: 0.73vw;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  transition: background-color ease-in-out .3s;
+.mob-menu {
 
-  &:hover {
-    background-color: rgba(51, 51, 51, 0.71);
-  }
-
-  &:not(:last-child) {
-    margin-right: 0.10vw;
-  }
-
-  &__icon {
-    display: block;
-    margin-right: 0.36vw;
-  }
-
-  &__text {
-  }
 }

@@ -1,31 +1,35 @@
 .reality {
-  padding: 0 0 11.72vw;
+  position: relative;
+  top: -5vw;
+  //padding: 0 0 11.72vw;
 
   &__text {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25vw;
     letter-spacing: -0.02em;
     line-height: 1.38em;
     color: #fff;
-    max-width: 30.47vw;
+    //max-width: 30.47vw;
     width: 100%;
     margin: 0 auto 12vw;
     text-align: center;
 
     &_small {
       font-size: 1.25vw;
-      letter-spacing: -0.04vw;
+      letter-spacing: -0.02em;
       line-height: 1.4em;
-      max-width: 24.48vw;
+      //max-width: 24.48vw;
       width: 100%;
-      margin-bottom: 4vw;
+      margin-bottom: 6vw;
     }
   }
 
   &__screens {
     display: flex;
     justify-content: center;
-    margin: 0 0 11.08vw;
+    margin: 0 0 6.08vw;
+    position: relative;
+    z-index: 2;
   }
 
   &__screen {
@@ -45,6 +49,7 @@
 
     &_1 {
       //left: 17.5vw;
+      transform: translateX(17.5vw);
     }
 
     &_2 {
@@ -52,6 +57,7 @@
     }
 
     &_3 {
+      transform: translateX(-17.5vw);
       //right: 17.5vw;
     }
   }

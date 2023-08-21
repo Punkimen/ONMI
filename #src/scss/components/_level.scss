@@ -6,8 +6,35 @@
   &__wrapper {
     display: flex;
     position: relative;
-    left: 25%;
+    //left: 25%;
+    //transform: translateX(-50%);
+
+  }
+
+  &__pagination {
+    display: none;
+    @media screen and (max-width: $md5) {
+      display: block;
+      bottom: 13.33vw;
+    }
+  }
+}
+
+.level-slider {
+  @media screen and (max-width: $md5) {
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 1.43vw;
+    height: 1.43vw;
+    background: rgba(255, 255, 255, 0.25);
+
+    &.swiper-pagination-bullet-active {
+      background: #fff;
+    }
   }
 }
 
@@ -19,18 +46,41 @@
   align-items: center;
   width: 49.53vw;
   height: 49.53vw;
-  border: 0.1vw solid rgba(255, 255, 255, 0.1);
   text-align: center;
   border-radius: 50%;
-  opacity: 0;
+  border: 0.1vw solid rgba(255, 255, 255, 0.1);
+  @media screen and (max-width: $md5) {
+    width: 150vw;
+    height: 150vw;
+    flex: 0 0 150vw;
+  }
 
-  &_center {
+  &.swiper-slide-active {
     border: 0.1vw solid rgba(255, 255, 255, 0.15);
+
+    .level-circle__title {
+      opacity: 1;
+    }
+
+    .level-circle__text {
+      opacity: 1;
+    }
   }
 
   &__title {
     margin-bottom: 3.85vw;
     font-size: 1.61vw;
+    opacity: 0;
+    transition: opacity ease .3s;
+    @media screen and (max-width: $md3) {
+      font-size: 3vw;
+    }
+    @media screen and (max-width: $md4) {
+      font-size: 4.04vw;
+    }
+    @media screen and (max-width: $md5) {
+      font-size: 7.6vw;
+    }
   }
 
   &__text {
@@ -39,11 +89,50 @@
     margin: 0 auto;
     font-size: 1.04vw;
     line-height: 1.35em;
+    opacity: 0;
+    transition: opacity ease .3s;
+    @media screen and (max-width: $md3) {
+      font-size: 1.41vw;
+      max-width: 26.35vw;
+    }
+    @media screen and (max-width: $md5) {
+      font-size: 3.81vw;
+      max-width: 46%;
+    }
 
     p {
       &:not(:last-child) {
         margin-bottom: 1.88vw;
       }
+    }
+  }
+}
+
+.level-slider {
+  position: relative;
+
+
+  &__arrows {
+
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    @media screen and (max-width: $md5) {
+      display: none;
+    }
+
+    &_prev {
+      left: 3.33vw;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &_next {
+      right: 3.33vw;
     }
   }
 }

@@ -1,126 +1,53 @@
 .find {
-  padding: 12.81vw 0 7.81vw;
-
-  @media(max-width: $md4) {
-    margin-bottom: 50%;
-  }
-
-  @media(max-width: $md5) {
-    margin-bottom: 74%;
-    padding: 32.81vw 0 22.81vw;
-  }
+  padding: 2.4vw 0 7.81vw;
 
   &__descr {
     position: relative;
-    //width: 66.51vw;
-    margin: 0 auto 2.6vw;
-
-    @media(max-width: $md4) {
-      margin-bottom: 8.46vw;
-      width: 100%;
-    }
+    margin: 0 auto 4.5vw;
   }
 
   &__title {
-    max-width: 43.07vw;
     width: 100%;
     letter-spacing: -0.26vw;
     position: relative;
-    margin: 0 auto 3.65vw;
+    margin: 0 auto 3vw;
     line-height: 1.6em;
     top: 1em;
-    @media(max-width: $md4) {
-      margin-bottom: 5.86vw;
-    }
 
-    @media(max-width: $md5) {
-      margin-bottom: 11.86vw;
-    }
-  }
-
-  &__title-row {
-    perspective: 31.25vw;
-
-    &_1 {
-      padding-left: 7vw;
-    }
-
-    &_2 {
-      text-align: right;
-      padding-right: 6.67vw;
-    }
-
-    &_3 {
-      padding-left: 20vw;
-    }
-
-    &_4 {
-      padding-left: 13vw;
+    .text-line {
+      white-space: nowrap;
     }
   }
 
   &__text {
-    max-width: 38.91vw;
     width: 100%;
-
-    @media(max-width: $md3) {
-      width: 18vw;
-      ridht: 1.2vw;
-    }
-
-    @media(max-width: $md4) {
-      position: relative;
-      top: 0;
-      right: 0;
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-    }
   }
 }
 
 .find-map {
-  /*  background-size: 100%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding-bottom: 16vw;*/
   position: relative;
   height: 56.25vw;
 
-  &__video {
+  &__map {
     position: absolute;
-    bottom: 0;
+    bottom: 3.33vw;
     left: 0;
     width: 100%;
     height: auto;
     object-fit: fill;
-  }
 
-  @media(max-width: $md4) {
-    background-size: auto;
-    background-position: center;
-    transform: translateY(50%);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__phone {
-    width: 23.96vw;
+    width: 16.88vw;
     margin: 0 auto;
     position: relative;
     top: 5vw;
-
-    @media(max-width: $md3) {
-    }
-
-    @media(max-width: $md4) {
-      width: 27.34vw;
-      top: 0;
-      transform: translateY(-50%);
-    }
-
-    @media(max-width: $md5) {
-      width: 49.30vw;
-    }
 
     img {
       position: relative;

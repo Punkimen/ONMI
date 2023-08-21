@@ -1,0 +1,142 @@
+.footer {
+  position: relative;
+  padding: 3.13vw 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3.7vw;
+  }
+
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 3.6vw;
+    width: 5.21vw;
+    min-width: 3.13vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__labels {
+    font-size: 0.94vw;
+    line-height: 1.1em;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    margin-right: 4.17vw;
+
+    svg {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    .x {
+      max-width: 0.94vw;
+    }
+
+    .instagram {
+      max-width: 1.04vw;
+    }
+
+    .telegram {
+      max-width: 1.09vw;
+    }
+
+    .medium {
+      max-width: 1.46vw;
+    }
+
+    .discord {
+      max-width: 1.25vw;
+    }
+  }
+
+  &__socials-link {
+    &:not(:last-child) {
+      margin-right: 1.82vw;
+    }
+  }
+
+  &__btns {
+    display: flex;
+
+  }
+
+  &__btn {
+    color: #fff;
+    border: none;
+    outline: none;
+
+    &:not(:last-child) {
+      margin-right: 0.36vw;
+    }
+  }
+
+  &__text {
+    font-size: 0.52vw;
+    color: #424242;
+    margin-bottom: 2.92vw;
+    line-height: 1.5em;
+  }
+
+  &__copy {
+    font-size: 0.73vw;
+  }
+}
+
+.app-btn {
+  border-radius: 0.36vw;
+  background-color: rgba(32, 32, 32, 0.71);
+  -webkit-backdrop-filter: blur(0.78vw);
+  backdrop-filter: blur(0.78vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .42vw .85vw .4vw .83vw;
+  text-transform: capitalize;
+  font-size: 0.73vw;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: background-color ease-in-out 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(51, 51, 51, 0.71);
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.5vw;
+  }
+
+  &__icon {
+    flex: 0 0 1.09vw;
+    max-width: 1.09vw;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 0.36vw;
+  }
+}

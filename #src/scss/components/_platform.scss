@@ -1,8 +1,8 @@
 .platform {
-  padding: 10.42vw 0 10.42vw;
+  padding: 0.42vw 0 10.42vw;
+  margin-bottom: 8.6vw;
 
   &__content {
-    max-width: 58.19vw;
     width: 100%;
     margin: 0 auto 3.7vw;
     position: relative;
@@ -10,7 +10,7 @@
 
   &__title {
     perspective: 31.25vw;
-    margin-bottom: 3.23vw;
+    margin-bottom: 0.23vw;
     line-height: 1.6em;
     position: relative;
     top: 0.6em;
@@ -26,7 +26,6 @@
   }
 
   &__text {
-    max-width: 23.33vw;
     width: 100%;
     margin: 0 auto;
   }
@@ -39,6 +38,7 @@
   }
 
   &__btn {
+    cursor: pointer;
     border: 0.05vw solid #575757;
     border-radius: 13.75vw;
     width: 100%;
@@ -47,7 +47,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all ease .5s;
+    transition: all ease .5s !important;
+    background: none;
+    color: #fff;
   }
 
   &__btn-text {

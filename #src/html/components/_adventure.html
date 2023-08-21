@@ -1,50 +1,60 @@
 <section class="adventure">
   <div class="container">
     <div class="adventure__content">
-      <h2 class="main__title adventure__title" data-lag="0.1">
-        <div class="adventure__title-row hidden">
-          <span class="text-line">Start</span>
+      <h2 class="main__title adventure__title">
+        <div class="title-row">
+          <span class="text-line color_gray" data-delay="0.1">Start</span>
         </div>
-        <div class="adventure__title-row hidden">
-          <span class="color_gray text-line">your&#160;adventure</span>
+        <div class="title-row">
+          <span class="text-line" data-delay="0.2">
+            <span class="text-desktop">your&#160;adventure</span>
+            <span class="text-mob">your</span>
+          </span>
+        </div>
+        <div class="title-row text-mob">
+          <span class="text-line" data-delay="0.3">adventure</span>
         </div>
       </h2>
-      <div class="main__text  adventure__text" data-lag="0.2">
-        <div class="text-line" data-delay="0.3">Take four simple steps and start exploring</div>
-        <div class="text-line" data-delay="0.4">the ONMI world</div>
+      <div class="main__text  adventure__text">
+        <div class="text-line" data-delay="0.3">
+          <span class="text-desktop">Take three simple steps and start exploring</span>
+          <span class="text-mob">Take three simple steps and start</span>
+        </div>
+        <div class="text-line" data-delay="0.4">
+          <span class="text-desktop">the ONMI world</span>
+          <span class="text-mob">exploring the ONMI world</span>
+        </div>
       </div>
     </div>
   </div>
   <div class="adventure__slider">
     <div class="adventure__slider-phone">
-      <div class="adventure__phone-img  animate" data-effect="fade-in" data-duration="2">
-        <noscript data-webp><img class="adventure__phone-phone" src="./img/adventure_phone.png" alt="Phone">
+      <div class="adventure__phone-img" data-effect="opacity" data-duration="2">
+        <noscript data-webp><img class="adventure__phone-phone" src="./img/adventure_phone.png"
+                                 alt="Phone">
         </noscript>
         <noscript data-webp><img class="adventure__phone-hand" src="./img/hand.png" alt="Phone in hand"/>
         </noscript>
 
       </div>
-      <div class="adventure__phone swiper animate" data-effect="opacity">
+      <div class="adventure__phone swiper" data-effect="opacity">
         <div class="swiper-wrapper">
           <div class="adventure__phone-slide swiper-slide">
-            <noscript data-webp><img src="./img/slider_phone/screen_1.png"></noscript>
+            <noscript data-webp><img src="./img/slider_phone/screen_1.png" alt="slide screen 1">
+            </noscript>
             <!-- <img src="./img/slider_phone/screen_1.png" > -->
           </div>
           <div class="adventure__phone-slide swiper-slide">
-            <noscript data-webp><img src="./img/slider_phone/screen_2.png"></noscript>
+            <noscript data-webp><img src="./img/slider_phone/screen_2.png" alt="slide screen 2">
+            </noscript>
             <!-- <img src="./img/slider_phone/screen_2.jpg" alt="s-type slide"> -->
           </div>
           <div class="adventure__phone-slide swiper-slide">
-            <noscript data-webp><img src="./img/slider_phone/screen_1.png"></noscript>
+            <video id="video_phone" src="./video/slider_video.mp4" type="video/mp4" autoplay="true"
+                   muted="muted" loop/>
+            <!--         <noscript data-webp><img src="./img/slider_phone/screen_2.png"  alt="slide screen 2">
+                     </noscript>-->
             <!-- <img src="./img/slider_phone/screen_1.png" alt="s-type slide"> -->
-          </div>
-          <div class="adventure__phone-slide swiper-slide">
-            <noscript data-webp><img src="./img/slider_phone/screen_2.png"></noscript>
-            <!-- <img src="./img/slider_phone/screen_1.png" alt="s-type slide"> -->
-          </div>
-          <div class="adventure__phone-slide swiper-slide">
-            <noscript data-webp><img src="./img/slider_phone/screen_1.png"></noscript>
-            <!-- <img src="./img/slider_phone/screen_2.jpg" alt="s-type slide"> -->
           </div>
         </div>
       </div>
@@ -59,55 +69,36 @@
               </noscript>
             </div>
             <div class="cards-slider__block">
-              <div class="cards-slider__descr">Choose an OMI character</div>
+              <div class="cards-slider__descr">Choose your character: their nature will determine how they play.</div>
               <div class="cards-slider__num">01</div>
             </div>
           </div>
           <div class="swiper-slide cards-slider__slide">
             <div class="cards-slider__phone">
               <noscript data-webp="">
-                <img src="./img/slider_phone/phone_slide_1.png" alt="phone_slide">
+                <img src="./img/slider_phone/phone_slide_2.png" alt="phone_slide">
               </noscript>
             </div>
             <div class="cards-slider__block">
-              <div class="cards-slider__descr">Walk around, collect mysteries and get tokens</div>
+              <div class="cards-slider__descr">Explore the world via the map: every object can be a discovery or a
+                challenge.
+              </div>
               <div class="cards-slider__num">02</div>
             </div>
           </div>
           <div class="swiper-slide cards-slider__slide">
             <div class="cards-slider__phone">
-              <noscript data-webp="">
-                <img src="./img/slider_phone/phone_slide_1.png" alt="phone_slide">
+              <noscript data-webp><img class="adventure__phone-phone" src="./img/adventure_phone.png"
+                                       alt="Phone">
               </noscript>
+              <video src="./video/slider_video.mp4" type="video/mp4" autoplay="true"
+                     muted="muted" loop/>
             </div>
             <div class="cards-slider__block">
-              <div class="cards-slider__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div class="cards-slider__descr">Activate your camera: interact with items in Reality 2.0 and earn
+                rewards.
               </div>
               <div class="cards-slider__num">03</div>
-            </div>
-          </div>
-          <div class="swiper-slide cards-slider__slide">
-            <div class="cards-slider__phone">
-              <noscript data-webp="">
-                <img src="./img/slider_phone/phone_slide_1.png" alt="phone_slide">
-              </noscript>
-            </div>
-            <div class="cards-slider__block">
-              <div class="cards-slider__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="cards-slider__num">04</div>
-            </div>
-          </div>
-          <div class="swiper-slide cards-slider__slide">
-            <div class="cards-slider__phone">
-              <noscript data-webp="">
-                <img src="./img/slider_phone/phone_slide_1.png" alt="phone_slide">
-              </noscript>
-            </div>
-            <div class="cards-slider__block">
-              <div class="cards-slider__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="cards-slider__num">05</div>
             </div>
           </div>
         </div>

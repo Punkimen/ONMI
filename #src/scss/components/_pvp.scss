@@ -1,9 +1,5 @@
 .pvp {
-  padding: 19vw 0 12vw;
-
-  @media(max-width: $md5) {
-    padding: 40vw 0 110vw;
-  }
+  padding: 0vw 0 10vw;
 
   &__wrapper {
     position: relative;
@@ -23,134 +19,52 @@
     left: -0.04em;
   }
 
-
-&__screen {
-  position: relative;
-  width: 55.16vw;
-  margin: -22vw auto 0;
-}
-
-&__screen-text {
-  position: absolute;
-  left: 1.98vw;
-  bottom: 9.90vw;
-  width: 14.43vw;
-  padding: 1.88vw 2.08vw 2.24vw 2.40vw;
-  background: #121214;
-  border: 0.05vw solid #292929;
-  border-radius: 2.03vw;
-  font-size: 0.78vw;
-  line-height: 1.4em;
-  z-index: 2;
-
-  @media(max-width: $md2) {
-    font-size: 1.33vw;
-    width: 16.67vw;
-    left: -1.02vw;
-    bottom: 12.9vw;
-  }
-
-  @media(max-width: $md3) {
-    left: -5vw;
-    bottom: 28vw;
-  }
-
-  @media(max-width: $md4) {
-    display: none;
-  }
-}
-
-&__screen-phone {
-  position: relative;
-  left: 0.52vw;
-  width: 19.11vw;
-  margin: 0 auto;
-
-  @media(max-width: $md3) {
-    width: 28.83vw;
-  }
-
-  @media(max-width: $md4) {
-    width: 37.24vw;
-  }
-
-  @media(max-width: $md5) {
-    width: 67.14vw;
-    left: -6.48vw;
-  }
-
-  img {
-    display: block;
+  &__text {
+    //max-width: 31.25vw;
     width: 100%;
-    height: auto;
-  }
-}
+    margin: 0 auto 15vw;
+    font-weight: 500;
+    font-size: 1.25vw;
+    text-align: center;
+    line-height: 1.42em;
+    letter-spacing: -0.02em;
 
-&__screen-OMI {
-  width: 67.40vw;
-  position: absolute;
-  bottom: -25.57vw;
-  right: -17.40vw;
-
-  @media(max-width: $md3) {
-    width: 83.67vw;
-    right: 0;
-    transform: translateX(40%);
-  }
-
-  @media(max-width: $md4) {
-    width: 108.07vw;
-  }
-
-  @media(max-width: $md5) {
-    width: 300vw;
-    transform: translate(55%, 45%);
-    bottom: 0;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-
-&__text {
-  max-width: 31.25vw;
-  width: 100%;
-  margin: 0 auto 7.29vw;
-  font-weight: 500;
-  font-size: 1.25vw;
-  text-align: center;
-  line-height: 1.42em;
-  letter-spacing: -0.02em;
-
-  p {
-    &:not(:last-child) {
-      margin-bottom: 1.56vw;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1.56vw;
+      }
     }
   }
-}
 
-&__phones {
-  display: flex;
-}
-
-&-phone {
-  max-width: 15.31vw;
-  width: 100%;
-
-  &:not(:last-child) {
-    margin-right: 6.93vw;
+  &__phones {
+    display: flex;
   }
 
-  img {
-    display: block;
+  &-phone {
+    max-width: 15.31vw;
     width: 100%;
-    height: auto;
-  }
-}
 
+    &:not(:last-child) {
+      margin-right: 6.93vw;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__map {
+    position: relative;
+    margin-top: -19vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .pvp-pose {

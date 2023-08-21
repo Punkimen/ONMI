@@ -1,33 +1,52 @@
 <section class="find">
   <div class="container">
     <div class="find__descr">
-      <h2 class="find__title main__title" data-lag="0.1">
+      <h2 class="find__title main__title">
         <div class="title-row">
-                    <span class="text-line" data-delay="0.1">Explore <span
-                        class="color_gray">cities in </span></span>
+          <span class="text-desktop text-line" data-delay="0.1">
+            <span>Explore <span class="color_gray">cities in</span></span>
+          </span>
+          <span class="text-mob text-line" data-delay="0.1">
+            <span>Explore <span class="color_gray">cities</span></span>
+          </span>
         </div>
         <div class="title-row">
-          <span class="color_gray text-line" data-delay="0.2">a new way</span>
+          <span class="color_gray text-line text-desktop" data-delay="0.2">a new way</span>
+          <span class="color_gray text-line text-mob" data-delay="0.2">in a new way</span>
         </div>
       </h2>
-      <div class="main__text find__text" data-lag="0.2">
+      <div class="main__text find__text">
         <div class="text-line" data-delay="0.3">
-          Choose interesting routes in different cities of the world, pass the
+          <span class="text-desktop">Choose interesting routes in various cities worldwide, complete</span>
+          <span class="text-mob">Choose interesting routes in various</span>
         </div>
-        <div class="text-line" data-delay="0.4">missions and find ORBs - AR objects that are important
+        <div class="text-line" data-delay="0.4">
+          <span class="text-desktop">missions, and find ORBs — a critical component of the ONMI</span>
+          <span class="text-mob">cities worldwide, complete missions, and find</span>
         </div>
-        <div class="text-line" data-delay="0.5">elements&#160;of ONMI ecosystem.</div>
+        <div class="text-line" data-delay="0.5">
+          <span class="text-desktop">ecosystem.</span>
+          <span class="text-mob">ORBs —a critical component</span>
+        </div>
+        <div class="text-mob text-line" data-delay="0.6">of the ONMI ecosystem.</div>
       </div>
     </div>
   </div>
   <div class="find-map">
-    <video id="video-scroll" class="find-map__video" src="./video/explore-map.webm" type="video/webm" muted></video>
+    <picture>
+      <source media="(max-device-width:568px)" srcset="./img/bitmap_mob.webp" >
+      <noscript data-webp>
+        <img src="./img/bitmap.png"  class="find-map__map" alt="city map"/>
+      </noscript>
+    </picture>
+    <noscript data-webp>
+    </noscript>
     <div class="container">
       <div class="find-map__phone">
-        <div data-effect="opacity" data-speed="1.1">
+        <div data-effect="opacity">
           <picture>
-            <source media="(max-width:768px)" srcset="./img/explore_phone.png">
-            <noscript data-webp><img src="./img/explore_phone.png"></noscript>
+            <source media="(max-device-width:768px)" srcset="./img/explore_phone.webp" >
+            <noscript data-webp><img src="./img/explore_phone.png"  alt="phone screen"></noscript>
           </picture>
         </div>
       </div>

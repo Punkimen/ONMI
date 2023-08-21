@@ -4,3 +4,4 @@ node_modules
 *.mov
 #src/video
 dist/video
+favicon_package_v0.16
