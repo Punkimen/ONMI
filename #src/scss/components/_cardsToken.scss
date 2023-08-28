@@ -1,4 +1,6 @@
 .cards-token {
+  padding-bottom: 10vw;
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,6 +32,12 @@
 
   &__icon {
     margin-bottom: 1.67vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__content {
@@ -43,6 +51,7 @@
     font-weight: 600;
     font-size: 2.08vw;
     color: #fff;
+    line-height: 1.4em;
   }
 
   &__text {
@@ -62,12 +71,6 @@
   &_1 {
     .card-token__icon {
       max-width: 2.66vw;
-
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
     }
 
     .card-token__text {
@@ -78,36 +81,30 @@
   &_2 {
     .card-token__icon {
       max-width: 9.32vw;
-
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
     }
   }
 
   &_3 {
     .card-token__icon {
       max-width: 2.50vw;
-
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
     }
   }
 
   &_4 {
     .card-token__icon {
       max-width: 3.13vw;
+    }
+  }
 
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+  &_5 {
+    .card-token__icon {
+      max-width: 3.33vw;
+    }
+  }
+
+  &_6 {
+    .card-token__icon {
+      max-width: 2.24vw;
     }
   }
 }

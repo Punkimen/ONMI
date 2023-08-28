@@ -99,6 +99,15 @@
     color: #424242;
     margin-bottom: 2.92vw;
     line-height: 1.5em;
+
+    a {
+      text-decoration: underline;
+      transition: color .3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 
   &__copy {

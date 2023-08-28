@@ -11,6 +11,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity ease-in .3s;
+  display: none;
 
   &.show {
     opacity: 1;

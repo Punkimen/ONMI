@@ -19,7 +19,7 @@
   width: 100%;
   overflow: hidden;
   text-align: center;
-  padding: 4.2vw 3.2vw 3vw 3.6vw;
+  padding: 4vw 3.2vw 3vw 3.6vw;
 
   &:not(:last-child) {
     margin-bottom: 0.94vw;
@@ -63,10 +63,9 @@
 
     .journey-card__omi {
       position: absolute;
-      bottom: 2%;
+      bottom: -15%;
       left: 0vw;
-      width: 25.5vw;
-
+      width: 100%;
       img {
         display: block;
         width: 100%;
@@ -80,7 +79,7 @@
     height: 40vw;
     background-size: 101%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 
     .journey-card__content {
       height: 100%;

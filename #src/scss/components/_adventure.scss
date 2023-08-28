@@ -65,6 +65,10 @@
     position: relative;
     left: 3.39vw;
     z-index: 2;
+
+    &.hide {
+      opacity: 0;
+    }
   }
 
   &__phone-hand {
@@ -93,6 +97,10 @@
 
   &__phone-slide {
     transition-duration: 1s;
+
+    &_video {
+
+    }
 
     video {
       display: block;
@@ -165,13 +173,13 @@
     }
 
     video {
-      position: absolute;
+      position: relative;
       z-index: 1;
-      width: 97%;
+      width: 100%;
       top: 0;
       height: 100%;
-      left: 50%;
-      transform: translateX(-50%);
+      //left: 50%;
+      //transform: translateX(-50%);
     }
   }
 

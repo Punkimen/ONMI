@@ -1290,7 +1290,13 @@
   .burger span {
     height: 0.26vw;
   }
-
+  .burger.active {
+    span {
+      &:first-child {
+        top: calc(50% - 0.2vw);
+      }
+    }
+  }
   .mob-menu {
     display: block;
   }
@@ -1406,14 +1412,14 @@
     align-items: center;
     left: -4vw;
     margin-right: 0vw !important;
+  }
 
-    &:first-child {
-      margin-right: -16vw !important;
-    }
+  .cards-slider__slide:first-child {
+    margin-right: -16vw !important;
+  }
 
-    &:nth-child(2) {
-      margin-right: -10vw !important;
-    }
+  .cards-slider__slide:nth-child(2) {
+    margin-right: -10vw !important;
   }
 
   .cards-slider__phone {
@@ -1546,15 +1552,19 @@
   .card_1 {
     height: 65vw;
   }
+
   .card_1 .card__front-aura {
     transform: translateX(-50%) scale(2);
   }
+
   .card_2 {
     height: 62vw;
   }
+
   .card_2 .card__front {
-    padding-bottom: 13.2vw;
+    padding-bottom: 6.2vw;
   }
+
   .card_2 .card__front .card__front-img {
     max-width: 50%;
   }
@@ -1562,10 +1572,16 @@
   .card_3 {
     height: 62vw;
   }
+
+  .card_3 .card__front {
+    padding-bottom: 6.2vw;
+  }
+
   .card_3 .card__front .card__front-img {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .card_4 {
     height: 65vw;
   }
@@ -1584,7 +1600,7 @@
   }
 
   .find__descr {
-    margin-bottom: 8.46vw;
+    margin-bottom: 16.46vw;
     width: 100%;
   }
 
@@ -1607,7 +1623,7 @@
   .find-map__phone {
     width: 27.34vw;
     top: 0;
-    transform: translateY(-25%);
+    transform: translateY(-60%);
   }
 
   .find-map__pointer {
@@ -1665,7 +1681,7 @@
 
   .journey-card_2 .journey-card__omi {
     width: 100%;
-    bottom: -13%;
+    bottom: -28%;
   }
 
   .journey-card_3 {
@@ -1690,6 +1706,7 @@
   .each-point__text_2 {
     display: none;
   }
+
   .each-point__circle {
     display: none;
   }
@@ -1718,17 +1735,14 @@
 
   .each-point__list {
     display: block;
-    border: 0.13vw solid #303030;
-    border-radius: 3.91vw;
-    padding: 6.25vw 5.21vw;
   }
 
   .sound {
     margin-bottom: 15vw;
   }
 
-  .sound__anim {
-    height: 50vw;
+  .sound__decor {
+    width: 80%;
   }
 
   .sound__text {
@@ -1774,7 +1788,7 @@
   }
 
   .market {
-    padding-bottom: 35vw;
+    padding-bottom: 55vw;
   }
 
   .market__wrapper {
@@ -1820,88 +1834,50 @@
   .hunger-games__wrapper {
     margin-bottom: -22vw;
   }
-
+  .hunger-games__pose {
+    top: -45.5vw;
+    left: 35vw;
+    width: 31.05vw;
+  }
   .hunger-games__title {
     font-size: 11.2vw;
+    margin-bottom: -16.5vw;
   }
 
   .hunger-games__title_small {
     font-size: 8.07vw;
   }
 
-  .hunger-progress__container {
-    padding: 0;
+  .hunger-games__city {
+    margin-top: -20.74vw;
   }
 
-  .hunger-progress__man_1 {
-    left: 3.65vw;
-    width: 2.2vw;
+  .hunger-games__cards {
+    grid-template-columns: 1fr;
+    max-width: 50vw;
+    grid-gap: 1.69vw;
   }
 
-  .hunger-progress__man_2 {
-    width: 2.56vw;
-    left: auto;
-    right: 26vw;
+  .card-token.hunger-card {
+    padding: 6.85vw 5.21vw 7.11vw 5.21vw;
   }
 
-  .hunger-progress__man_3 {
-    display: none;
+  .hunger-card__icon_1 {
+    width: 26.56vw;
   }
 
-  .hunger-progress__man_4 {
-    display: none;
+  .hunger-card__icon_2 {
+    width: 9.64vw;
   }
 
-  .hunger-progress__man_5 {
-    display: none;
+  .hunger-card__title {
+    font-size: 5.21vw;
+    margin-bottom: 2.08vw;
   }
 
-  .hunger-progress__man_6 {
-    display: none;
+  .hunger-card__text {
+    font-size: 2.08vw;
   }
-
-  .hunger-progress__man_7 {
-    right: 15.65vw;
-    width: 2.2vw;
-  }
-
-  .hunger-progress__man_finish {
-    right: 3.65vw;
-    width: 2.46vw;
-  }
-
-  .hunger-progress__text {
-    font-size: 2.34vw;
-  }
-
-  .hunger-progress__text_1 {
-    max-width: 39.16vw;
-    margin-bottom: 2.6vw;
-  }
-
-  .hunger-progress__text_2 {
-    max-width: 39.16vw;
-    margin-bottom: 12.37vw;
-  }
-
-  .hunger-progress__text_3 {
-    max-width: 39.16vw;
-    margin-left: 0;
-  }
-
-  .hunger-progress__main-wrapper {
-    display: block;
-  }
-
-  .hunger-map__icon {
-    width: 6.8vw;
-    display: none;
-  }
-
-  .hunger-map__icon_mob {
-    display: block;
-  }
-
   .be-part__content {
     margin-bottom: 49vw;
   }
@@ -1965,7 +1941,9 @@
   .individual-chose__list-elem::before {
     display: none;
   }
-
+  .mission {
+    padding-bottom: 50vw;
+  }
   .mission__wrapper {
     display: block;
     padding-top: 11.5vw;
@@ -2005,10 +1983,6 @@
     max-width: 50vw;
     width: 100%;
     color: var(--color-gray);
-  }
-
-  .culture {
-    padding: 20vw 0 20vw;
   }
 
   .culture__title {
@@ -2182,7 +2156,12 @@
   .card-token_4 .card-token__icon {
     max-width: 8.2vw;
   }
-
+  .card-token_5 .card-token__icon {
+    max-width: 8.33vw;
+  }
+  .card-token_6 .card-token__icon {
+    max-width: 5.60vw;
+  }
   .tokenomics__title {
     font-size: 7.81vw;
     margin-bottom: 7.81vw;
@@ -2399,9 +2378,11 @@
   .modal__info {
     left: 3.65vw;
   }
+
   .modal__content {
     padding-top: 14vw;
   }
+
   .modal__close {
     right: 3.65vw;
     width: 4.17vw;

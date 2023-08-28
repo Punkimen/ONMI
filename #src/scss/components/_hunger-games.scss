@@ -1,6 +1,6 @@
 .hunger-games {
   padding: 9vw 0 10vw;
-  margin-bottom: 23.6vw;
+  margin-bottom: 2.6vw;
 
   &__wrapper {
     position: relative;
@@ -10,10 +10,11 @@
   &__title {
     text-align: center;
     width: 100%;
-    text-transform: capitalize;
-    line-height: 0.8em;
+    line-height: 1.6em;
     letter-spacing: -0.03em;
-    font-size: 10.31vw;
+    font-size: 6.25vw;
+    margin-bottom: -4.5vw;
+
     &_small {
       position: relative;
       font-size: 4.17vw;
@@ -23,8 +24,8 @@
 
   &__pose {
     position: absolute;
-    top: -10vw;
-    left: 45vw;
+    top: -22vw;
+    left: 42vw;
     width: 15.05vw;
 
     img {
@@ -34,9 +35,10 @@
     }
   }
 
-  &__earth {
+  &__city {
     width: 100%;
-    margin: 0 auto;
+    margin: -4.74vw auto -9.64vw;
+    position: relative;
 
     img {
       display: block;
@@ -49,6 +51,7 @@
     font-size: 0.83vw;
     line-height: 2;
     width: 16.93vw;
+    color: rgba(255, 255, 255, 0.58);
 
     p {
       display: block;
@@ -59,133 +62,44 @@
     }
   }
 
+  &__cards {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.83vw;
+    max-width: 56.81vw;
+    width: 100%;
+    margin: 0 auto;
+
+  }
 }
 
-
-.hunger-progress {
-  margin: 15vw 0 16vw;
-
-  &__container {
+.card-token.hunger-card {
+  padding: 3vw 2.81vw 4.17vw 2.81vw;
+  justify-content: flex-start;
+  @media(max-width: $md3) {
+    height: auto;
   }
-
-  &__inner {
-    position: relative;
-    padding-bottom: 2.81vw;
+  @media(max-width: $md4) {
+    padding: 6.85vw 5.21vw 7.11vw 5.21vw;
   }
+}
 
-  &__man {
-    position: absolute;
-    top: -0.21vw;
-    transform: translateY(-100%);
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    &_1 {
-      left: 0;
-      width: 1.20vw;
-    }
-
-    &_2 {
-      left: 2.81vw;
-      width: 1.56vw;
-    }
-
-    &_3 {
-      left: 10.42vw;
-      width: 1.25vw;
-    }
-
-    &_4 {
-      left: 18.75vw;
-      width: 1.56vw;
-    }
-
-    &_5 {
-      left: 32.2vw;
-      width: 0.94vw;
-    }
-
-    &_6 {
-      left: 48.7vw;
-      width: 1.04vw;
-    }
-
-    &_7 {
-      right: 38.5vw;
-      width: 1.20vw;
-    }
-
-    &_finish {
-      right: 32.7vw;
-      width: 1.46vw;
-    }
-  }
-
-  &__img {
-    width: 100%;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin-bottom: 2.60vw;
-    }
-  }
-
-  &__text {
-    font-weight: 500;
-    font-size: 0.94vw;
-    width: 100%;
-    line-height: 1.35em;
-
-    p {
-      &:not(:last-child) {
-        margin-bottom: 1.15vw;
-      }
-    }
-
-    &_1 {
-      max-width: 15.16vw;
-    }
-
-    &_2 {
-      max-width: 14.38vw;
-    }
-
-    &_3 {
-      max-width: 17.2vw;
-      margin-left: 3.6vw;
-    }
-  }
-
-  &__wrapper {
-    display: grid;
-    gap: 2.60vw;
-    grid-template-columns: 1fr 1fr;
-  }
-  }
-
-.hunger-map {
+.hunger-card {
   &__icon {
-    position: absolute;
-    top: -0.21vw;
-    transform: translateY(-100%);
-    right: 17.1vw;
-    width: 3.44vw;
+    min-height: 2.60vw;
+    margin-bottom: 50%;
 
-    &_mob {
-      display: none;
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translate(0, 0);
-      margin-bottom: 5.86vw;
+
+    &_1 {
+      width: 10.63vw;
+
+    }
+
+    &_2 {
+      width: 3.44vw;
+
     }
 
     img {
@@ -193,26 +107,26 @@
       width: 100%;
       height: auto;
     }
+  }
+
+  &__content {
   }
 
   &__title {
-    max-width: 34.33vw;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.07em;
+    font-size: 2.08vw;
+    margin-bottom: 30px;
   }
 
   &__text {
-    max-width: 14.58vw;
-    width: 100%;
-    font-size: 0.83vw;
-    line-height: 1.4;
+    max-width: 90%;
+    font-size: 0.94vw;
+    line-height: 1.33em;
 
     p {
       &:not(:last-child) {
-        margin-bottom: 1.35vw;
+        margin-bottom: 24px;
       }
     }
   }
 }
+

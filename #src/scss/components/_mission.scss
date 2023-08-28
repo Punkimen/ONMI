@@ -1,5 +1,5 @@
 .mission {
-  padding: 4vw 0 18vw;
+  padding: 4vw 0 35vw;
 
   &__wrapper {
     position: relative;
@@ -14,26 +14,6 @@
     height: 0.05vw;
     background: rgba(255, 255, 255, .3);
     transition: 1.2s ease-in-out .1s;
-
-    &_diagonally {
-      width: 113%;
-      left: 50%;
-      transform: translateX(-50%) rotate(-28deg);
-      background: none;
-
-      svg {
-        position: relative;
-        top: -0.94vw;
-        width: 100%;
-        height: 100%;
-
-        line {
-          stroke-dasharray: 200%;
-          stroke-dashoffset: 258%;
-          transition: 1.2s ease-in-out .1s;
-        }
-      }
-    }
   }
 
   &__title {
@@ -46,41 +26,13 @@
     padding-left: 1.46vw;
   }
 
-  &__title-arrow {
-    font-weight: 300;
-    margin-left: 3.91vw;
-    width: 3.13vw;
-
-    img {
-      transform: rotate(180deg);
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-
   &__text {
-    width: 37vw;
-    font-size: 1.25vw;
-    line-height: 1.8;
+    width: 97%;
+    font-size: 2.6vw;
+    line-height: 1.2em;
 
     &:not(:last-child) {
       margin-bottom: 12.29vw;
-      }
-
-    &_big {
-      font-size: 2.60vw;
-      width: 38.11vw;
-      line-height: 1.2em;
-      letter-spacing: -0.013em;
-      font-size: 2.60vw;
-
-      p {
-        &:not(:last-child) {
-          margin-bottom: 3.23vw;
-        }
-      }
     }
-
   }
 }

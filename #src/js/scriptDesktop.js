@@ -4,8 +4,6 @@ import {
   horizontalTransform,
   scalingFoo,
   verticalTransform,
-  leftToRight,
-  svgDraw
 } from "./module/GSAPAnim.min.js";
 import {splitText} from "./module/splitText.min.js";
 
@@ -25,8 +23,6 @@ const cardsMap = document.querySelector('.card__front-img_bg')
 const journeyCardPhone = document.querySelector('.journey-card__phone')
 const journeyCardOmi = document.querySelector('.journey-card_2 .journey-card__omi')
 const journeyCardMap = document.querySelector('.journey-card_4 .card__front-img_bg')
-const svgLine = document.querySelector('.mission__line_diagonally line');
-const missionLineHorizontal = document.querySelector('.mission__line_horizontal')
 ScrollTrigger.refresh()
 setTimeout(() => {
   ScrollTrigger.refresh()
@@ -39,7 +35,7 @@ readedText.forEach(el => {
 })
 horizontalTransform(OMICircle1, OMICircles, '100%', '33%')
 horizontalTransform(OMICircle3, OMICircles, '-100%', '-43%')
-horizontalTransform(cardsNft, cardsNft, "-3%", "3%")
+horizontalTransform(cardsNft, cardsNft, "-5%", "5%", true, null, 'top+=50% bottom', 'bottom top-=50%')
 horizontalTransform(phone_1, phoneScreens, '17.5vw', '0', true, null, 'top bottom', 'top+=25% center')
 horizontalTransform(phone_3, phoneScreens, '-17.5vw', "0", true, null, 'top bottom', 'top+=25% center')
 scalingFoo(cardsAura, cardsAura, 1, 2, "top bottom+=25%", "center top", true)
@@ -48,5 +44,4 @@ verticalTransform(cardsMap, cardsMap, '-5%', '5%', true)
 verticalTransform(journeyCardPhone, journeyCardPhone, '5%', '-10%', true)
 verticalTransform(journeyCardOmi, journeyCardOmi, '-5%', '5%', true)
 verticalTransform(journeyCardMap, journeyCardMap, '-5%', '5%', true)
-svgDraw(svgLine, svgLine, null, '400%')
-leftToRight(missionLineHorizontal, svgLine)
+
