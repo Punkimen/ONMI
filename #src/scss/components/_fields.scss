@@ -7,6 +7,7 @@
   font-family: "Manrope", sans-serif;
   font-weight: bold;
   color: #fff;
+  outline: none;
 
   &::placeholder {
     color: #585858;
@@ -16,6 +17,8 @@
   }
 
   &:focus {
+    border-color: #fff;
+
     &::placeholder {
       color: transparent;
     }
