@@ -159,8 +159,9 @@ const descrReality = (windowWidth) => {
   }
 }
 verticalTransform(heroPose, heroPose, '-15%', '0%', true, 'top center+=35%', "bottom top")
-heroPose.style.opacity = 1
+
 const initPage = () => {
+  heroPose.style.opacity = 1
   seeMore()
   selectInit()
   modal.style.display = 'block';
