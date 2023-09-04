@@ -2272,26 +2272,37 @@
     height: 7.62vw;
     top: 6.23vw;
   }
-
+  .modal__container {
+    min-height: 119.05vw;
+  }
   .form__label {
-    max-width: 73.81vw;
     width: 100%;
-    font-size: 4.76vw;
-    margin-bottom: 15.5vw;
-  }
+    font-size: 8.3vw;
+    margin-bottom: 7.37vh;
 
+    .color_green {
+      display: block;
+    }
+  }
   .form__field {
-    margin-bottom: 6.67vw;
+    &:not(:last-child) {
+      margin-bottom: 2.14vw;
+    }
   }
-
-  .form__field .line {
-    bottom: -1.5vw;
+  .field {
+    font-size: 4.29vw;
+    min-height: 15.71vw;
+    font-weight: 500;
+    //padding: ;
   }
-
-  .form__input {
-    font-size: 7.62vw;
+  .select__arrow {
+    width: 2.62vw;
+    right: 3.81vw;
   }
-
+  .select__elem {
+    font-size: 4.29vw;
+    padding: 2.38vw 3.81vw;
+  }
   .form__btn.btn {
     font-size: 3.81vw;
     padding: 4.76vw 12.62vw 4.76vw 12.62vw;

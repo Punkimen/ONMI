@@ -1,0 +1,127 @@
+.field {
+  border: 0.05vw solid rgba(151, 151, 151, 0.18);
+  background: #000;
+  border-radius: 0.94vw;
+  padding: 1.04vw 1.67vw 1.04vw 1.67vw;
+  font-size: 0.94vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #fff;
+
+  &::placeholder {
+    color: #585858;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.select {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+
+  &.show {
+    .select__header {
+      border-color: #fff;
+    }
+
+    .select__arrow {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .select__body {
+      max-height: 200px;
+      border-color: rgba(151, 151, 151, 0.18);
+    }
+  }
+
+  &.selected {
+    .select__value {
+      color: #fff;
+    }
+  }
+
+  &__header {
+    cursor: pointer;
+    position: relative;
+    color: #585858;
+    padding-right: 2.60vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__value {
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 0.78vw;
+    transform: translateY(-50%) rotate(90deg);
+    width: 0.57vw;
+    transition: transform ease-out .2s;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      fill: #464646;
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    border-radius: 0.94vw;
+    overflow: hidden;
+    background: #000;
+    z-index: 5;
+    position: absolute;
+    top: calc(100% + 0.26vw);
+    left: 0;
+    width: 100%;
+    min-width: 10.42vw;
+    border: 0.05vw solid transparent;
+    transition: max-height ease-out .2s;
+  }
+
+  &__list {
+    overflow: auto;
+    max-height: 200px;
+    height: 100%;
+  }
+
+  &__elem {
+    position: relative;
+    padding: 0.83vw 0.63vw 0.83vw 0.63vw;
+    transition: background-color ease-out .2s;
+
+    &:hover {
+      background: #1e1e1e;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(151, 151, 151, 0.18);
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
