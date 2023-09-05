@@ -2,7 +2,7 @@
   border: 0.05vw solid rgba(151, 151, 151, 0.18);
   background: #000;
   border-radius: 0.94vw;
-  padding: 1.04vw 1.67vw 1.04vw 1.67vw;
+  padding: 1.04vw 1.67vw 0.8vw 1.67vw;
   font-size: 0.94vw;
   font-family: "Manrope", sans-serif;
   font-weight: bold;
@@ -98,10 +98,20 @@
     transition: max-height ease-out .2s;
   }
 
+  &__body-search {
+    padding: 0.52vw 0.52vw 0;
+  }
+
   &__list {
     overflow: auto;
     max-height: 200px;
     height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__elem {
@@ -126,5 +136,22 @@
     height: 100%;
     opacity: 0;
     cursor: pointer;
+  }
+}
+
+.search__input {
+  font-size: inherit;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.18);
+  display: block;
+  width: 100%;
+  color: #fff;
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
   }
 }
