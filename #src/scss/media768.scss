@@ -1426,6 +1426,11 @@
     width: 27.47vw;
     display: block;
     margin-right: 4.69vw;
+    border-radius: 0;
+
+    &_video {
+      max-width: 25.5vw;
+    }
   }
 
   .cards-slider__block {
@@ -2188,7 +2193,9 @@
   .tokenomics__text p:not(:last-child) {
     margin-bottom: 3.91vw;
   }
-
+  .roadmap, .questions {
+    padding-bottom: 18vw;
+  }
   .roadmap__title {
     width: calc(100% + 3.56vw);
     margin-bottom: 17.78vw;
@@ -2400,13 +2407,13 @@
       margin-bottom: 1.30vw;
     }
   }
-  .field{
+  .field {
     border: 0.13vw solid rgba(151, 151, 151, 0.18);
   }
   .form__text {
     margin-bottom: 7.16vw;
   }
-  .select__elem{
+  .select__elem {
     font-size: 2.34vw;
   }
   .form__btn.btn {

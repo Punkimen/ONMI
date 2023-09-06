@@ -1,6 +1,6 @@
 <div id="modal" class="modal">
   <div class="modal__container container">
-    <div class="modal__content">
+    <div class="modal__content modal__content_centered">
       <form id="be-part__form" action="" class="modal__form form">
         <div class="form__label">
           <span class="color_green">Early Access</span> for the first 10.000 users
@@ -12,8 +12,8 @@
           <div class="form__field form__field_select">
             <div id="country" class="select">
               <div class="select__header field">
-                <div class="select__value">
-                  Country
+                <div class="">
+                  <input id="country-search" autocomplete="off" class="select__value search__input" placeholder="Country..."/>
                 </div>
                 <div class="select__arrow">
                   <svg width="29" height="34" class="arrow_link">
@@ -22,9 +22,6 @@
                 </div>
               </div>
               <div class="select__body">
-                <div class="select__body-search">
-                  <input id="country-search" class="search__input" placeholder="Search..."/>
-                </div>
                 <ul class="select__list">
 
                 </ul>

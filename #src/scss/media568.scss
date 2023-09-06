@@ -1358,6 +1358,10 @@
   .cards-slider__phone {
     min-width: 50.53vw;
     margin-right: 5.45vw;
+
+    &_video {
+      min-width: 47.53vw;
+    }
   }
 
   .cards-slider__block {
@@ -2299,6 +2303,7 @@
     font-weight: 500;
     border: 0.24vw solid rgba(151, 151, 151, 0.18);
   }
+
   .select__body-search {
     padding: 2.38vw 2.38vw 0;
   }
