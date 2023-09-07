@@ -2,6 +2,10 @@
   position: relative;
   min-height: 100vh;
 
+  &__img {
+    min-height: 108.85vw;
+  }
+
   &__content {
     width: 100%;
     position: fixed;
@@ -74,7 +78,7 @@
   &_bg_2 {
     transform: rotate(180deg);
     position: relative;
-    top: -2px;
+    top: -3px;
   }
 }
 
