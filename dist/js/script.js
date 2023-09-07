@@ -159,9 +159,10 @@ const descrReality = (windowWidth) => {
     })
   }
 }
-verticalTransform(heroPose, heroPose, '-15%', '0%', true, 'center top+=25%', "bottom top")
 
 const initPage = () => {
+  verticalTransform(heroPose, heroPose, '0%', '15%', true, 'center top+=50%', "bottom top")
+
   heroPose.style.opacity = 1
   seeMore()
   selectInit()
